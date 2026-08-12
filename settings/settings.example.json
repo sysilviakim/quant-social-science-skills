@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/CHANGEME/.claude/hooks/destructive-guard.js\"",
+            "timeout": 15,
+            "statusMessage": "Checking for destructive commands"
+          }
+        ]
+      }
+    ]
+  },
+  "attribution": {
+    "commit": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(Rscript *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)"
+    ]
+  }
+}
