@@ -7,8 +7,8 @@ Claude Code configuration for quantitative social science research: skills, rule
 | Directory | What's there |
 |-----------|--------------|
 | [`hooks/`](hooks/) | `destructive-guard.js`, a PreToolUse guard that blocks permanent deletion and redirects to the Recycle Bin, plus `trash.ps1`, the Windows helper it points to |
-| [`rules/`](rules/) | Always-in-context instruction modules. Currently `destructive-command-safety.md` |
-| [`skills/`](skills/) | On-demand Agent Skills. Empty so far; see the README there for layout and frontmatter conventions |
+| [`rules/`](rules/) | Always-in-context instruction modules: `destructive-command-safety.md` and `r-code-conventions.md` |
+| [`skills/`](skills/) | On-demand Agent Skills. Currently `figure-table-audit`, which is CC BY-NC 4.0 rather than MIT |
 | [`agents/`](agents/) | Subagent definitions for review and verification work. Empty so far |
 | [`settings/`](settings/) | `settings.example.json`, a starter `~/.claude/settings.json` with the guard already wired |
 
@@ -32,4 +32,4 @@ The guard's two-tier deny/ask structure, whitelist-first ordering, and fail-open
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE), with one exception: `skills/figure-table-audit/` is [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), because it is adapted from [Steven Denney's open-science-skills](https://github.com/scdenney/open-science-skills), which remixes Cheng-I Wu's Academic Research Skills for Claude Code. Non-commercial use only for that directory. Everything else, including the hook, the rules, and the settings example, is MIT and free for any use.

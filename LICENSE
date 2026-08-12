@@ -1,4 +1,20 @@
-MIT License
+MIT License applies to this repository EXCEPT where a directory states
+otherwise. Current exceptions:
+
+  skills/figure-table-audit/   Creative Commons Attribution-NonCommercial
+                               4.0 International (CC BY-NC 4.0)
+
+That directory is adapted from Steven Denney's open-science-skills
+(https://github.com/scdenney/open-science-skills, CC BY-NC 4.0), which in
+turn remixes workflow concepts from Cheng-I Wu's Academic Research Skills
+for Claude Code (CC BY-NC 4.0). It may not be used commercially, and
+attribution must be preserved. See skills/figure-table-audit/SKILL.md and
+https://creativecommons.org/licenses/by-nc/4.0/ for the full terms.
+
+Everything else, including hooks/, rules/, settings/, and all README files,
+is MIT:
+
+---
 
 Copyright (c) 2026 Seo-young Silvia Kim
 

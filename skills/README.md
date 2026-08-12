@@ -4,7 +4,9 @@ Agent Skills for quantitative social science research, loaded on demand when the
 
 Ported so far:
 
-- `figure-table-audit` — end-stage QA pass over figures, tables, captions, cross-references, and statistical notes before submission.
+- `figure-table-audit`: end-stage QA pass over figures, tables, captions, cross-references, and statistical notes before submission.
+
+`figure-table-audit` is CC BY-NC 4.0, not MIT like the rest of this repository. It is adapted from Denney's open-science-skills, which remixes Cheng-I Wu's Academic Research Skills. See the attribution block at the end of its `SKILL.md`, and the repository [LICENSE](../LICENSE).
 
 ## Layout
 

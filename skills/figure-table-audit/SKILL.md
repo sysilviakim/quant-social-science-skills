@@ -1,6 +1,6 @@
 ---
 name: figure-table-audit
-description: Audit figures, tables, captions, cross-references, and statistical notes. Use for an end-stage manuscript QA pass once the figure/table set is stable — inventory callouts and source scripts, check text-to-evidence consistency, audit captions, accessibility, and SI/replication linkage.
+description: Audit figures, tables, captions, cross-references, and statistical notes. Use for an end-stage manuscript QA pass once the figure/table set is stable: inventory callouts and source scripts, check text-to-evidence consistency, audit captions, accessibility, and SI/replication linkage.
 argument-hint: "[path to manuscript, figures, tables, SI, or compiled PDF; include target journal if known]"
 ---
 
@@ -12,7 +12,7 @@ When a claim requires reading plotted values from an image, prefer source data o
 
 This is the **end-stage** auditor. Run `figure-table-audit` once the figure and table set is stable and you are preparing for submission.
 
-The audit is read-only: do not modify the manuscript, figures, or code, and never compile or run builds — the author compiles. The only file written is the audit report.
+The audit is read-only: do not modify the manuscript, figures, or code, and never compile or run builds, since the author compiles. The only file written is the audit report.
 
 ## Instructions
 
@@ -151,3 +151,9 @@ Severity:
 - [ ] Abstract and introduction headline numbers were checked against tables/figures.
 - [ ] Captions and notes were checked for sample, units, uncertainty, and model details.
 - [ ] SI and replication links were checked when files were available.
+
+---
+
+## Attribution and license
+
+Adapted from [Steven Denney's open-science-skills](https://github.com/scdenney/open-science-skills), which remixes workflow concepts from Cheng-I Wu's Academic Research Skills for Claude Code. Both are licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), and so is this file, unlike the rest of this repository, which is MIT. Non-commercial use only; keep this attribution if you adapt it further.
