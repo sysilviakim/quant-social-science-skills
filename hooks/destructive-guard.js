@@ -5,7 +5,7 @@
 // pipeline as the match. Design informed by
 // Dicklesworthstone/destructive_command_guard (two-tier deny/ask,
 // whitelist-first, fail-open on parse errors).
-// See rules/destructive-command-safety.md for the procedure.
+// See the destructive-command-safety skill for the deletion procedure.
 //
 // Tiers:
 //   DENY - commands that permanently destroy data at scale. Hard-blocked;
@@ -107,7 +107,7 @@ process.stdin.on('end', () => {
   const reason =
     r.decision === 'deny'
       ? `BLOCKED (${r.why}): permanent-deletion commands are disabled on this ` +
-        `machine (destructive-command-safety rule). Recoverable alternative: ` +
+        `machine (destructive-command-safety policy). Recoverable alternative: ` +
         `${TRASH} - or quarantine-move to a _trash/ folder. If permanent ` +
         `deletion is truly required, the user must run it themselves or lift ` +
         `the guard in ~/.claude/settings.json.`
