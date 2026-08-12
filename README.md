@@ -7,8 +7,8 @@ Claude Code configuration for quantitative social science research: skills, rule
 | Directory | What's there |
 |-----------|--------------|
 | [`hooks/`](hooks/) | `destructive-guard.js`, a PreToolUse guard that blocks permanent deletion and redirects to the Recycle Bin, plus `trash.ps1`, the Windows helper it points to |
-| [`rules/`](rules/) | Always-in-context instruction modules. Currently `r-code-conventions.md`, scoped to R files |
-| [`skills/`](skills/) | On-demand Agent Skills. `destructive-command-safety` and `figure-table-audit`, the latter CC BY-NC 4.0 rather than MIT |
+| [`rules/`](rules/) | Always-in-context instruction modules. `r-code-conventions.md`, scoped to R files, and `plan-first-workflow.md`, always on |
+| [`skills/`](skills/) | On-demand Agent Skills. `destructive-command-safety`, `figure-table-audit`, and `citation-check`, the last two CC BY-NC 4.0 rather than MIT |
 | [`agents/`](agents/) | Subagent definitions for review and verification work. Empty so far |
 | [`settings/`](settings/) | `settings.example.json`, a starter `~/.claude/settings.json` with the guard already wired |
 
@@ -32,4 +32,4 @@ The guard's two-tier deny/ask structure, whitelist-first ordering, and fail-open
 
 ## License
 
-[MIT](LICENSE), with one exception: `skills/figure-table-audit/` is [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), because it is adapted from [Steven Denney's open-science-skills](https://github.com/scdenney/open-science-skills), which remixes Cheng-I Wu's Academic Research Skills for Claude Code. Non-commercial use only for that directory. Everything else, including the hook, the rules, and the settings example, is MIT and free for any use.
+[MIT](LICENSE), with two exceptions: `skills/figure-table-audit/` and `skills/citation-check/` are [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), because both are adapted from [Steven Denney's open-science-skills](https://github.com/scdenney/open-science-skills), which remixes Cheng-I Wu's Academic Research Skills for Claude Code. Non-commercial use only for those two directories. Everything else, including the hook, the rules, and the settings example, is MIT and free for any use.

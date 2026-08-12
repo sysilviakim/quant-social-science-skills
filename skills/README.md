@@ -6,8 +6,9 @@ Ported so far:
 
 - `destructive-command-safety`: safe procedure for bulk deletion. Companion to the [`destructive-guard.js`](../hooks/) hook, which enforces the policy; this carries the two-phase enumerate-inspect-delete method.
 - `figure-table-audit`: end-stage QA pass over figures, tables, captions, cross-references, and statistical notes before submission.
+- `citation-check`: in-text/reference parity, DOI validation against Crossref and friends, fabrication and retraction detection, and an audit of whether cited sources actually support the claims made from them.
 
-`figure-table-audit` is CC BY-NC 4.0, not MIT like the rest of this repository. It is adapted from Denney's open-science-skills, which remixes Cheng-I Wu's Academic Research Skills. See the attribution block at the end of its `SKILL.md`, and the repository [LICENSE](../LICENSE).
+`figure-table-audit` and `citation-check` are CC BY-NC 4.0, not MIT like the rest of this repository. Both are adapted from Denney's open-science-skills, which remixes Cheng-I Wu's Academic Research Skills. See the attribution block at the end of each `SKILL.md`, and the repository [LICENSE](../LICENSE).
 
 ## Layout
 

@@ -2,14 +2,21 @@ MIT License applies to this repository EXCEPT where a directory states
 otherwise. Current exceptions:
 
   skills/figure-table-audit/   Creative Commons Attribution-NonCommercial
-                               4.0 International (CC BY-NC 4.0)
+  skills/citation-check/       4.0 International (CC BY-NC 4.0)
 
-That directory is adapted from Steven Denney's open-science-skills
+Both directories are adapted from Steven Denney's open-science-skills
 (https://github.com/scdenney/open-science-skills, CC BY-NC 4.0), which in
 turn remixes workflow concepts from Cheng-I Wu's Academic Research Skills
-for Claude Code (CC BY-NC 4.0). It may not be used commercially, and
-attribution must be preserved. See skills/figure-table-audit/SKILL.md and
-https://creativecommons.org/licenses/by-nc/4.0/ for the full terms.
+for Claude Code (CC BY-NC 4.0). They may not be used commercially, and
+attribution must be preserved. See the attribution block at the end of each
+SKILL.md and https://creativecommons.org/licenses/by-nc/4.0/ for the full
+terms.
+
+The per-field sweep in skills/citation-check/ additionally draws on Scott
+Cunningham's bibcheck (https://github.com/scunning1975/MixtapeTools), which
+is offered freely with attribution appreciated but not required. It adds no
+license condition; the CC BY-NC restriction above comes from Denney and Wu
+alone.
 
 Everything else, including hooks/, rules/, settings/, and all README files,
 is MIT:
