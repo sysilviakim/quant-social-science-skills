@@ -71,7 +71,7 @@ Requires Node.js on `PATH`. Copy both files into `~/.claude/hooks/`, then wire t
 
 The `command` path is absolute and machine-specific, so adjust it. On macOS and Linux use `node "$HOME/.claude/hooks/destructive-guard.js"`. `trash.ps1` needs no wiring: the guard locates it next to itself and prints the full invocation in its block message.
 
-Pair it with [`rules/destructive-command-safety.md`](../rules/destructive-command-safety.md), which gives the agent the two-phase enumerate-inspect-delete procedure to follow once the guard has stopped it.
+Pair it with the [`destructive-command-safety`](../skills/destructive-command-safety/SKILL.md) skill, which gives the agent the two-phase enumerate-inspect-delete procedure to follow once the guard has stopped it. It is a skill rather than an always-loaded rule because the hook already does the enforcing; the procedure is only needed when a deletion is actually happening.
 
 ### Verify the install
 

@@ -4,15 +4,16 @@ Instruction modules read into context at the start of every session, the same wa
 
 | File | Scope |
 |------|-------|
-| [`destructive-command-safety.md`](destructive-command-safety.md) | Deletion policy. Pairs with the `hooks/destructive-guard.js` PreToolUse hook |
 | [`r-code-conventions.md`](r-code-conventions.md) | R style, reproducibility, figure and table standards. Scoped via `paths:` to `.R`, `.Rmd`, `.qmd` |
 
 ## How rules differ from skills
 
 A rule is always in context for the sessions that load it. A skill is loaded on demand when its `description` matches the task. So:
 
-- Rule: short, general, and costly to get wrong if the model has not read it *before* acting. Safety policies, code conventions, workflow expectations.
+- Rule: short, general, and costly to get wrong if the model has not read it *before* acting. Code conventions, workflow expectations, anything with no other enforcement mechanism.
 - Skill: longer, procedural, and only relevant to a specific kind of task.
+
+Where a hook can enforce a policy mechanically, the accompanying procedure belongs in a skill rather than a rule: the hook catches the mistake, and the procedure only has to be in context once someone is actually doing the risky thing. `destructive-command-safety` moved out of this directory for exactly that reason.
 
 Keep rules terse. Everything in this directory is paid for on every turn of every session that loads it. Anything over about 50 lines is probably a skill, or a rule plus a reference document the rule links to. That second pattern is what `destructive-command-safety.md` does with `hooks/README.md`.
 
