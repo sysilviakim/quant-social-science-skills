@@ -19,7 +19,7 @@
 const path = require('path');
 
 // Resolved from this file's own location, so the guard is portable across
-// machines and install paths — no hardcoded home directory.
+// machines and install paths, with no hardcoded home directory.
 const TRASH_SCRIPT = path.join(__dirname, 'trash.ps1').replace(/\\/g, '/');
 const TRASH =
   `powershell -ExecutionPolicy Bypass -File "${TRASH_SCRIPT}" <path>`;
