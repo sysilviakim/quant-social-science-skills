@@ -5,6 +5,7 @@ Instruction modules read into context at the start of every session, the same wa
 | File | Scope |
 |------|-------|
 | [`r-code-conventions.md`](r-code-conventions.md) | R style, reproducibility, figure and table standards. Scoped via `paths:` to `.R`, `.Rmd`, `.qmd` |
+| [`plan-first-workflow.md`](plan-first-workflow.md) | When to plan before acting, where plans live, and how to pick work back up after a compaction. Unscoped, so always on |
 
 ## How rules differ from skills
 
