@@ -5,6 +5,7 @@ Instruction modules read into context at the start of every session, the same wa
 | File | Scope |
 |------|-------|
 | [`destructive-command-safety.md`](destructive-command-safety.md) | Deletion policy. Pairs with the `hooks/destructive-guard.js` PreToolUse hook |
+| [`r-code-conventions.md`](r-code-conventions.md) | R style, reproducibility, figure and table standards. Scoped via `paths:` to `.R`, `.Rmd`, `.qmd` |
 
 ## How rules differ from skills
 
