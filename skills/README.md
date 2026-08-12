@@ -2,7 +2,9 @@
 
 Agent Skills for quantitative social science research, loaded on demand when the task matches.
 
-*(None ported yet. Layout and conventions below.)*
+Ported so far:
+
+- `figure-table-audit` — end-stage QA pass over figures, tables, captions, cross-references, and statistical notes before submission.
 
 ## Layout
 
