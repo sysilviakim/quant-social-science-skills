@@ -1,6 +1,6 @@
 ---
 name: figure-table-audit
-description: Audit figures, tables, captions, cross-references, and statistical notes. Use for an end-stage manuscript QA pass once the figure/table set is stable: inventory callouts and source scripts, check text-to-evidence consistency, audit captions, accessibility, and SI/replication linkage.
+description: Audit figures, tables, captions, cross-references, and statistical notes. Use for an end-stage manuscript QA pass once the figure/table set is stable, covering inventory of callouts and source scripts, text-to-evidence consistency, captions, accessibility, and SI/replication linkage.
 argument-hint: "[path to manuscript, figures, tables, SI, or compiled PDF; include target journal if known]"
 ---
 
