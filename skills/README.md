@@ -2,7 +2,7 @@
 
 Agent Skills for quantitative social science research, loaded on demand when the task matches.
 
-Ported so far:
+Current skills:
 
 - `destructive-command-safety`: safe procedure for bulk deletion. Companion to the [`destructive-guard.js`](../hooks/) hook, which enforces the policy; this carries the two-phase enumerate-inspect-delete method.
 - `figure-table-audit`: end-stage QA pass over figures, tables, captions, cross-references, and statistical notes before submission.

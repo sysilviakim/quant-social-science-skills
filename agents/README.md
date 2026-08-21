@@ -2,7 +2,7 @@
 
 Subagents for research tasks, dispatched with the Agent tool. Each runs in its own context window with its own system prompt and tool set, and returns a report rather than a running commentary.
 
-*(None ported yet. Layout and conventions below.)*
+*(None yet. Layout and conventions below.)*
 
 ## Layout
 
