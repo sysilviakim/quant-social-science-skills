@@ -1,0 +1,53 @@
+# Making the Most of Statistical Analyses: Improving Interpretation and Presentation
+
+**Contributor:** Hanul Kim
+
+**Full citation:** King, Gary, Michael Tomz, and Jason Wittenberg. 2000. "Making the Most of Statistical Analyses: Improving Interpretation and Presentation." American Journal of Political Science 44 (2): 347–61. 
+
+------------------------------------------------------------------------
+
+## 1. What the paper establishes
+
+Most quantitative social scientists report model parameters with coefficients with significance rather than the quantities that are substantively meaningful, and when they report such quantities they usually ignore the uncertainty around the quantities.
+
+The paper suggests that using statistical simulation of drawing many parameter vectors from the estimated model, researchers can translate the results into substantively interpretable quantities such as predicted values, expected values, and first differences, while carrying estimation uncertainty. The paper's five replicated examples, using linear regression, logit, time-series cross-sectional, multinomial logit, and censored Weibull regression models, illustrate how this approach can help researchers express estimated quantities and conclusions more sharply and informatively without requiring new data or changing the original model.
+
+## 2. Checks for a reviewer
+
+**(a) Check whether the substantive claims about a nonlinear model rest only on the coefficient signs or statistical significance.** Reporting the direction of the coefficient and significance without quantity on the scale of the outcome, readers cannot know the size of the effect in a substantive meaning.
+
+**(b) Check whether uncertainties is reported for every predicted value, expected value, first difference, or counterfactual comparison.** The most common failure. Since these quantities are uncertain, they are dependent on estimated parameters. Reviewers should check whether the authors report uncertainty for the counterfactual comparison, rather than only point estimates or the separate uncertainty levels for each scenario.
+
+**(c) Check if the reported quantity and its uncertainty corresponds to the research question.** If the claim is about prediction, the predicted value should encompass both estimation uncertainty and fundamental uncertainty. In contrast, if the claim is about an average outcome, the expected value, that averages over the fundamental variability of randomness and retains only estimation uncertainty, is appropriate.
+
+**(d) Check how the authors returned the dependent variable to the original scale if the variable was transformed before estimation.** Exponentiating the fitted value of ln(Y) and reporting it as the expected Y is possibly wrong. In order to call the result an expected value in the original scale, it should be transformed to the simulated outcome drawn before averaging. But it doesn't apply uniformly if the estimand is explicitly a geometric mean or median.
+
+**(e) When simulated quantities are reported, check how the parameters were drawn and how precise they are.** Parameter draws should consider the joint uncertainty by using the full variance-covariance matrix of both the effect coefficients and the ancillary parameters. Researchers should increase the number of simulation large enough in order to stabilize the reported quantities for precision.
+
+## 3. Evidence
+
+**For (a).** The authors describe the common practice that "many researchers stop after a cursory look at the signs and "statistical significance" of the effect parameters" (p. 348). They explain that the parameters in nonlinear models can be "difficult to interpret and only indirectly related" to the substantive questions (p. 348) and recommend to "calculate and present quantities of direct substantive interest" (p.348).
+
+**For (b).** The paper notes that "computing derivatives, fitted values, and first differences(p. 348)" is a step forward, but "even these approaches are inadequate, however, because they ignore two forms of uncertainty" (p. 348) which are estimation uncertainty and fundamental uncertainty. Since the parameter estimates are not certain, computing based on them "also be uncertain, a fact that almost no scholars take into account" (p.349). The table 1 Garrett's Counterfactual Effects on Government Spending (p. 356) shows the possibility that "the results could have arisen from chance alone" (p. 357).
+
+**For (c).** The authors state that "a predicted value contains both fundamental and estimation uncertainty” (p. 350), while "an expected value averages over the fundamental variability arising from sheer randomness in the world" and retains estimation uncertainty (p. 350). They argue that predicted values thus have greater variance than expected values, although their averages would be nearly the same (p. 350).
+
+**For (d).** The paper states that the common procedure of "calculating $E[\widehat{\ln(Y)}] = \hat{\mu}$ without simulation and then exponentiating gives the wrong answer" (p. 354). Instead, the authors recommend to "simulate ln(Y) and then apply the inverse function exp(ln(Y)) to reveal Y" (p. 354).
+
+**For (e).** The authors warn that "simulating each parameter independently would be incorrect" since it would miss the covariances among parameters (p. 353). Also, "one common mistake is to exclude some parameters when drawing from the multivariate normal distribution" (p. 353). The remedy suggested for numerical precision is "repeating the entire algorithm and seeing if anything of substantive importance changes" (p. 354). They add that reporting numerical estimates should be to "the correct level of precision" by repeated runs (p.354).
+
+## 4. Scope
+
+**Applies to:** **Check (a) applies to** nonlinear models (p. 348), including logit, probit, ordered and multinomial models, count and duration models, where coefficients are "difficult to interpret and only indirectly related to the substantive issues" (p. 348). **Check (b) applies to** papers reporting predicted values, first differences, or counterfactual scenarios and drawing conclusions from them, because calculations based on uncertain estimates are uncertain as well (p. 349). **Check (c) applies to** claims about future, individual, or realized outcomes where outcome randomness matters, since only predicted values include fundamental uncertainty (p. 350). **Check (d) applies to** models estimated on a transformed outcome, most often a logged dependent variable, whose results are interpreted as an arithmetic expectation on the original scale (p. 354). **Check (e) applies to** papers that report simulated quantities from asymptotic normal approximation, which assumes the central limit theorem holds at the sample size available (p. 351).
+
+**Does not directly apply to: Check (a)** does not apply to a linear model with an untransformed outcome, as long as the authors state the size of the effect in the outcome's own scale. In linear models, "an exact analytical solution exists for the mean and variance of the quantities of interest, and simulation produces the same answer" (p. 352). **Check (b)** does not apply when the paper already reports valid uncertainty for the quantity. **Check (c)** does not directly apply to papers making only average effect arguments, since in that case expected values are appropriate. **Check (d)** doesn't apply when the authors report a log-scale estimand, a geometric mean or median, or use a valid retransformation adjustment. The normal approximation parts of **check (e)** do not apply to fully Bayesian MCMC draws or nonparametric bootstrap draws, which do not rely on the multivariate normal (p. 352).
+
+## 5. What failure looks like
+
+A result table shows logit or probit coefficients with stars, and the paper says that the effect of the explanatory variable is positive (or negative) and significant (or insignificant) without translating it into probabilities. Or the paper presents a table of predicted probabilities or counterfactual cells, or predicted values, but fail to report standard errors, intervals, or bands. Or the paper predicts a specific outcome, such as a single election case or one individual’s outcome, but reports an interval for the average outcome, which reflects only estimation uncertainty and leaves out the randomness of the individual outcome. Or the paper uses a log-outcome model and reports the average outcome in original units, but computes it simply by exponentiating the predicted log value. Or the paper uses simulation but done carelessly, for example by drawing each coefficient separately from its own standard error and ignoring the covariances among the estimates, by leaving a variance or cutpoint parameter out of the draws, or by reporting results for a certain digits without mentioning how many simulations drawn.
+
+## 6. Test cases
+
+**SHOULD trigger:** Rudolph, Thomas. 2021. “Populist Anger, Donald Trump, and the 2016 Election.” *Journal of Elections, Public Opinion and Parties* 31(1): 33–58. The author translates ordered probit, multinomial logit, and probit estimates into predicted probabilities, satisfying check (a). However, all the predicted-probability figures (Figures 1-4, pp. 45, 48, 51, 53) show only point estimates without intervals and the text relies on comparing those points, saying that anger raises the probability of a Trump vote "by a remarkable margin of 52 percentage points” (p. 52) and "the predicted impact of populist anger on Trump support was twice as large as that of anti-immigration sentiment" (p. 54). These are where check (b) triggers and the reviewer should ask for uncertainty for the predicted probabilities.
+
+**Should NOT trigger:** Healy, Andrew, and Neil Malhotra. 2009. “Myopic Voters and Natural Disaster Policy.” *American Political Science Review* 103(3): 387–406. At first glance, this paper seems it could trigger checks (a) and (d). For check (a), the vote models are linear regression with an untransformed outcome of vote share and the paper shows that the size of the effect in percentage points, for example "the incumbent party will gain about .77 percentage points in the county" (p.400), not just its significance level. For check (d), the paper uses logged variables, "the spending measure that we use is the logarithm of per-capita spending plus one" (p. 392) and the outcome in Table 4 (p. 397) is logged spending. A careless reviewer to trigger check (d), but the authors state those results on the log scale saying "when disaster damage increases by 1%, the regression results suggest that relief expenditures increase by .072%" (p. 397), and never convert them into an expected level of spending.
