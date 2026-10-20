@@ -1,8 +1,10 @@
 # Factorial Designs, Model Selection, and Incorrect Inference
 
+**Full citation:** Karthik Muralidharan, Mauricio Romero, Kaspar Wüthrich; Factorial Designs, Model Selection, and (Incorrect) Inference in Randomized Experiments. The Review of Economics and Statistics 2025; 107 (3): 589–604. doi: <https://doi.org/10.1162/rest_a_01317>
+
 **Contributor:** Songyea Lee
 
-**Full citation:**Karthik Muralidharan, Mauricio Romero, Kaspar Wüthrich; Factorial Designs, Model Selection, and (Incorrect) Inference in Randomized Experiments. The Review of Economics and Statistics 2025; 107 (3): 589–604. doi: <https://doi.org/10.1162/rest_a_01317>
+---
 
 **Source Version used for quotations: Factorial Designs, Model Selection, and (Incorrect) Inference in Randomized Experiments Karthik Muralidharan, Mauricio Romero, and Kaspar Wüthrich NBER Working Paper No. 26562 December 2019, Revised in September 2020. JEL No. C12,C18,C90,C93 All quotations and page numbers refer to the 2020 working-paper version.**
 

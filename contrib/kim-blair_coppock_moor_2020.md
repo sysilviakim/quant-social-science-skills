@@ -1,8 +1,10 @@
 # When to Worry about Sensitivity Bias
 
+**Full citation:** Blair, Graeme, Alexander Coppock, and Margaret Moor. 2020. "When to Worry about Sensitivity Bias: A Social Reference Theory and Evidence from 30 Years of List Experiments." *American Political Science Review* 114(4): 1297–1315. doi:10.1017/S0003055420000374.
+
 **Contributor:** Jina Kim
 
-**Full citation:** Blair, Graeme, Alexander Coppock, and Margaret Moor. 2020. "When to Worry about Sensitivity Bias: A Social Reference Theory and Evidence from 30 Years of List Experiments." *American Political Science Review* 114(4): 1297–1315. doi:10.1017/S0003055420000374.
+---
 
 ## 1. What the paper establishes
 

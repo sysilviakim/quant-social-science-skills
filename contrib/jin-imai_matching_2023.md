@@ -1,8 +1,10 @@
 # Matching Methods for TSCS Data
 
+**Full citation:** Imai, Kosuke, In Song Kim, and Erik H. Wang. 2023. "Matching Methods for Causal Inference with Time-Series Cross-Sectional Data." *American Journal of Political Science* 67(3): 587–605. doi:10.1111/ajps.12685.
+
 **Contributor:** Yanlin Jin
 
-**Full citation:** Imai, Kosuke, In Song Kim, and Erik H. Wang. 2023. "Matching Methods for Causal Inference with Time-Series Cross-Sectional Data." *American Journal of Political Science* 67(3): 587–605. doi:10.1111/ajps.12685.
+---
 
 ## 1. What the paper establishes
 
@@ -22,13 +24,13 @@ Matching methods are good at improving the validity of causal inference. But the
 
 **(e) Check its matched sets and covariate balance.** Are controls drawn from the same time period, with an identical treatment history? Treated observations without a match are dropped, the paper should report how many and which ones, since this changes the target population. It should also report covariate balance after refinement, for lagged outcomes and time-varying covariates across multiple pretreatment periods. This help evaluate the appropriateness of the parallel trend assumption used to justify DiD estimator.
 
-**(f) Check its standard errors.** The proposed standard errors are conditional on the matching weights and do not include uncertainty from building the matched sets; does the paper say so? If it uses a bootstrap, does it resample whole units and keep the weights fixed? 
+**(f) Check its standard errors.** The proposed standard errors are conditional on the matching weights and do not include uncertainty from building the matched sets; does the paper say so? If it uses a bootstrap, does it resample whole units and keep the weights fixed?
 
 **(g) Check whether assumptions the method cannot fix are plausible.** Is there a likely unobserved confounder that changes over time? Could one unit’s treatment affect other units’ outcomes, as with neighboring countries? When units are geographically or economically linked, check whether the manuscript addresses spillover.
 
 ## 3. Evidence
 
-**For (a).** The authors ask researchers to check “whether the treatment sufficiently varies both over time and across units ... or the treatment variation is concentrated in a relatively small subset of the data” (p. 592). The reason is that “the internal and external validity of causal effect estimation with TSCS data critically rely upon such variation” (p. 592). In Scheve and Stasavage’s data, most wars fall in the two world wars, so “it may be difficult to generalize the estimates obtained from this data set beyond the two world wars” (p. 592). Concentrated variation limits what the estimate can describe. The authors also skip the effect of ending a war “because the latter lacks enough control countries” (p. 599). 
+**For (a).** The authors ask researchers to check “whether the treatment sufficiently varies both over time and across units ... or the treatment variation is concentrated in a relatively small subset of the data” (p. 592). The reason is that “the internal and external validity of causal effect estimation with TSCS data critically rely upon such variation” (p. 592). In Scheve and Stasavage’s data, most wars fall in the two world wars, so “it may be difficult to generalize the estimates obtained from this data set beyond the two world wars” (p. 592). Concentrated variation limits what the estimate can describe. The authors also skip the effect of ending a war “because the latter lacks enough control countries” (p. 599).
 
 **For (b).** The equivalence holds “if there are two time periods and the treatment is administered to some units only in the second time period” (p. 597), but it “does not generalize to the multiperiod DiD design” (p. 597). Outside this simple case, TWFE is no longer a DiD. The error is common: the authors note that “many applied researchers motivate the use of two-way fixed effects regression by the DiD design” (p. 597). Theorem 1 shows that writing the DiD estimator as a TWFE regression requires weights W_it that “can take a negative value in many cases” (p. 597). Ordinary TWFE does not use these weights, so its result rests on the model rather than the design. Hence the DiD argument “is invalid unless the modelling assumption is correct” (p. 597). The error is also consequential: in simulations, TWFE “suffers from a substantial bias unless the model is correctly specified” (p. 588), especially when relevant lags are omitted (p. 598). And because TWFE makes it “difficult to intuitively understand how counterfactual outcomes are estimated” (p. 587), the reader cannot see which comparisons drive the result.
 
@@ -46,7 +48,7 @@ Matching methods are good at improving the validity of causal inference. But the
 
 **Applies to:** observational studies with TSCS data, a binary treatment, and a causal claim(pp. 587, 592). Treatment can be adopted once or switch on and off. Check (a) applies to any such paper. Check (b) applies when the paper uses TWFE and justifies it as DiD. Checks (c)–(g) apply when the paper uses matching or weighting for TSCS data.
 
-**Does not directly apply to:** non-binary (e.g., continuous) treatments. The paper covers only binary treatment and only suggests an extension (p. 603). Settings where spillover between units matters (e.g., neighboring countries, social networks). The method assumes none (p. 593). 
+**Does not directly apply to:** non-binary (e.g., continuous) treatments. The paper covers only binary treatment and only suggests an extension (p. 603). Settings where spillover between units matters (e.g., neighboring countries, social networks). The method assumes none (p. 593).
 
 **Does not apply to: c**ross-sectional data with one observation per unit there is no treatment history to match on.
 

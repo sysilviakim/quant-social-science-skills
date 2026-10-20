@@ -1,8 +1,10 @@
 # How Much Should We Trust Instrumental Variable Estimates in Political Science? Practical Advice Based on 67 Replicated Studies
 
+**Full citation:** Lal, Apoorva, Mackenzie Lockhart, Yiqing Xu, and Ziwen Zu. 2024. “How Much Should We Trust Instrumental Variable Estimates in Political Science? Practical Advice Based on 67 Replicated Studies.” *Political Analysis* 32: 521–540. https://doi.org/10.1017/pan.2024.2.
+
 **Contributor:** 김준석
 
-**Full citation:** Lal, Apoorva, Mackenzie Lockhart, Yiqing Xu, and Ziwen Zu. 2024. “How Much Should We Trust Instrumental Variable Estimates in Political Science? Practical Advice Based on 67 Replicated Studies.” *Political Analysis* 32: 521–540. https://doi.org/10.1017/pan.2024.2.
+---
 
 ## 1. What the paper establishes
 
@@ -54,6 +56,6 @@ IV를 사용했다는 사실만으로 내생성 문제가 해결되었다고 보
 
 ## 6. Test cases
 
-**점검이 필요한 사례:** Rueda, Miguel R. 2017. “Small Aggregates, Big Manipulation: Vote Buying Enforcement and Collective Monitoring.” *American Journal of Political Science* 61(1): 163–177. 이 연구는 투표소 규모를 내생적 처치로 두고, 유권자 수 제한규칙이 예측한 투표소 규모를 도구로 사용한다. 그러므로 도구의 외생성과 1단계 강도, OLS–2SLS 차이를 살펴볼 필요가 있다. Lal et al.의 재현에서 1단계 F 통계량은 8,598.3으로 매우 크고, 2SLS와 OLS의 차이도 크지 않았다(p. 537, Figure 6). 이 사례를 보면 이 점검표의 목적이 모든 IV 연구를 문제 있다고 판정하는 데 있는 것은 아니라고 생각한다.
+**SHOULD trigger:** Rueda, Miguel R. 2017. “Small Aggregates, Big Manipulation: Vote Buying Enforcement and Collective Monitoring.” *American Journal of Political Science* 61(1): 163–177. 이 연구는 투표소 규모를 내생적 처치로 두고, 유권자 수 제한규칙이 예측한 투표소 규모를 도구로 사용한다. 그러므로 도구의 외생성과 1단계 강도, OLS–2SLS 차이를 살펴볼 필요가 있다. Lal et al.의 재현에서 1단계 F 통계량은 8,598.3으로 매우 크고, 2SLS와 OLS의 차이도 크지 않았다(p. 537, Figure 6). 이 사례를 보면 이 점검표의 목적이 모든 IV 연구를 문제 있다고 판정하는 데 있는 것은 아니라고 생각한다.
 
-**점검이 필요하지 않은 사례:** DeMora, Stephanie L., Jennifer L. Merolla, Brian Newman, and Elizabeth J. Zechmeister. 2024. “Jesus Was a Refugee: Religious Values Framing Can Increase Support for Refugees Among White Evangelical Republicans.” *Political Behavior* 46: 2145–2168. 이 연구는 세 메시지 조건을 응답자에게 직접 무작위 배정하고 조건별 ITT 평균차를 추정한다. 도구변수나 2SLS를 사용하지 않으므로 effective F, AR 검정, OLS–2SLS 비교를 요구하면 안 된다. 무작위화, 처치 정의, SUTVA, 측정과 외적 타당성은 따로 점검할 수 있지만, 그것은 이 논문의 IV 점검표와는 다른 문제이다.
+**Should NOT trigger:** DeMora, Stephanie L., Jennifer L. Merolla, Brian Newman, and Elizabeth J. Zechmeister. 2024. “Jesus Was a Refugee: Religious Values Framing Can Increase Support for Refugees Among White Evangelical Republicans.” *Political Behavior* 46: 2145–2168. 이 연구는 세 메시지 조건을 응답자에게 직접 무작위 배정하고 조건별 ITT 평균차를 추정한다. 도구변수나 2SLS를 사용하지 않으므로 effective F, AR 검정, OLS–2SLS 비교를 요구하면 안 된다. 무작위화, 처치 정의, SUTVA, 측정과 외적 타당성은 따로 점검할 수 있지만, 그것은 이 논문의 IV 점검표와는 다른 문제이다.

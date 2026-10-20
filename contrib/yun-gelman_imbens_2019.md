@@ -1,8 +1,10 @@
 # High-order Polynomials in Regression Discontinuity Designs
 
+**Full citation:** Gelman, Andrew, and Guido Imbens. 2019. "Why High-Order Polynomials Should Not Be Used in Regression Discontinuity Designs." Journal of Business & Economic Statistics 37 (3): 447–56.
+
 **Contributor:** Sayon Yun
 
-**Full citation:** Gelman, Andrew, and Guido Imbens. 2019. "Why High-Order Polynomials Should Not Be Used in Regression Discontinuity Designs." Journal of Business & Economic Statistics 37 (3): 447–56.
+---
 
 ## 1. What the paper establishes
 
@@ -46,6 +48,6 @@ A manuscript uses a global high-order polynomial to estimate a regression discon
 
 ## 6. Test cases
 
-SHOULD trigger: Lee, D. S. (2008). Randomized experiments from non-random selection in U.S. House elections. Journal of Econometrics, 142(2), 675–697. The paper uses fourth-order polynomial to estimate the discontinuity (pp. 687-688), so checks (a)-(d) should be considered. Reviewers should assess the justification for the polynomial specification, inspect the estimator-implied observation weights, compare estimates across polynomial orders, and examine whether confidence-interval coverage is assessed where no discontinuity is expected.
+**SHOULD trigger:** Lee, D. S. (2008). Randomized experiments from non-random selection in U.S. House elections. Journal of Econometrics, 142(2), 675–697. The paper uses fourth-order polynomial to estimate the discontinuity (pp. 687-688), so checks (a)-(d) should be considered. Reviewers should assess the justification for the polynomial specification, inspect the estimator-implied observation weights, compare estimates across polynomial orders, and examine whether confidence-interval coverage is assessed where no discontinuity is expected.
 
-Should NOT trigger: Erikson, R. S., & Titiunik, R. (2015). Using regression discontinuity to uncover the personal incumbency advantage. Quarterly Journal of Political Science, 10(1), 101–119. The paper illustrates a regression discontinuity approach to estimating the personal incumbency advantage. Its parametric analysis uses a linear regression, while the nonparametric estimates are based on local linear regressions of the outcomes on the either side of the cutoff (pp. 113-114). Because the paper does not use a global high-order polynomial to estimate the discontinuity, checks (a)-(d) should not trigger.
+**Should NOT trigger:** Erikson, R. S., & Titiunik, R. (2015). Using regression discontinuity to uncover the personal incumbency advantage. Quarterly Journal of Political Science, 10(1), 101–119. The paper illustrates a regression discontinuity approach to estimating the personal incumbency advantage. Its parametric analysis uses a linear regression, while the nonparametric estimates are based on local linear regressions of the outcomes on the either side of the cutoff (pp. 113-114). Because the paper does not use a global high-order polynomial to estimate the discontinuity, checks (a)-(d) should not trigger.

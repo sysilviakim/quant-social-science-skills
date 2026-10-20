@@ -1,15 +1,19 @@
 # Pretest with Caution
 
-**Contributor:** Hojin Jang
-
 **Full citation:** Roth, Jonathan. 2022. "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends." *American Economic Review: Insights* 4 (3): 305–22. [doi:10.1257/aeri.20210236](https://doi.org/10.1257/aeri.20210236)
 
+**Contributor:** Hojin Jang
+
+---
+
 ## 1. What the paper establishes
+
 Researchers using difference-in-differences (DiD) and related methods commonly test for pre-trends to assess the plausibility of the parallel trends assumption. Roth shows that this practice has two problems: the test often has low power, so violations large enough to bias the estimate go undetected, and when parallel trends is violated, estimates that pass the pretest can be even more biased than they would be without one.
 
 Roth's first recommendation is to report the power of the pretest: how large a violation it would detect and how much bias a violation of that size would cause. Because a power analysis does not remove the distortion from pretesting, he also recommends methods that avoid the pretest altogether, guided by context-specific knowledge of how parallel trends could fail.
 
 ## 2. Checks for a reviewer
+
 (a) Check whether the paper uses an insignificant pre-trend as support for parallel trends, how much weight it puts on that result, and what other support it provides. Failing to reject does not establish that the assumption holds.
 
 (b) Check whether the paper reports the power of its pre-trends test. It should say how large a violation the test would detect with a stated probability (for example, 50 or 80 percent), and how the bias from a violation of that size compares with the estimated treatment effect. A joint-significance p-value is not a substitute: it is another pretest, and it does not say what magnitude of trend the data can rule out.
@@ -21,6 +25,7 @@ Roth's first recommendation is to report the power of the pretest: how large a v
 (e) Check whether the paper names a specific way parallel trends could fail in its setting and ties its analysis to it. The paper should identify the theoretical confounders that could produce a differential trend and the shape that trend would take, and choose the alternatives in (b) or the bounds in (d) accordingly.
 
 ## 3. Evidence
+
 For (a). Roth concludes that "pre-trends tests may be ineffective in avoiding biases from violations of parallel trends and can even exacerbate these biases" (p. 306). An insignificant pre-trend therefore cannot validate parallel trends on its own. He also warns reviewers: "Requiring an insignificant pre-trend to publish a paper thus has an ambiguous effect on average bias in published work" (p. 318).
 
 For (b). In the replication sample, "none of the papers discusses what magnitude of pre-trend can be rejected by the data" (p. 308). Roth's first recommendation fills that gap: "researchers relying on pre-trends tests should assess whether their tests are likely to be well powered against relevant violations of parallel trends that would produce meaningful biases in the treatment effect estimates" (p. 319). For a linear trend that the pretest would detect 80 percent of the time, the resulting bias is "often of a magnitude comparable to, and in some cases larger than, the estimated treatment effect" (p. 310).
@@ -32,6 +37,7 @@ For (d). A power analysis is not enough. Roth says of it, "doing so does not avo
 For (e). The paper closes: "I urge researchers to use context-specific economic knowledge to inform the discussion and analysis of possible violations of parallel trends" (p. 319). Roth's example: "if the difference in trends is growing exponentially over time, then it will be small in the pretreatment period (so rejecting the pretest is unlikely) but the biases in the posttreatment period will be quite large" (p. 313). A manuscript that never says what a violation would look like gives the reviewer no way to judge whether (b) or (d) was run against the right alternative.
 
 ## 4. Scope
+
 Applies to: Causal DiD and related event-study papers that use pretreatment estimates to support parallel trends. Check (a) applies if an insignificant pre-trend is offered as evidence; (b) if the causal claim relies on that test, whether or not power is reported. Check (c) applies to a monotone differential trend with a plausible direction when the paper interprets estimates after none of the pretreatment coefficients is individually significant. Roth's directional result assumes a common variance for the event-time estimates and a common positive covariance between every pair (pp. 315–16). Check (d) applies when the conclusion depends on passing the pretest, even if power is reported. Check (e) applies when authors use a pretest or choose a trend for power or sensitivity analysis; that trend should reflect plausible confounding. Roth's linear simulations do not establish the numerical bias for nonlinear trends (p. 313).
 
 Does not directly apply to: DiD analyses that do not use an insignificant pre-trend to support or screen their causal claims, such as a two-period DiD with only one pretreatment observation, or an event study that shows pre-period estimates descriptively while defending parallel trends through theory or design. The pretesting checks (a)–(d) should then stay silent. This includes LP-DiD based on conditional parallel trends if its validity does not depend on a passed pretest. An analysis with valid inference under a specified trend violation also needs no pretest-based check. These designs still need a credible argument for conditional parallel trends or the allowed violation. If they use insignificant pre-trends to defend that argument, (a) and (b) apply; (c) and (d) apply under their further conditions. Check (e) can still apply when the paper chooses a trend shape for sensitivity analysis.
@@ -44,10 +50,10 @@ An event-study plot shows imprecise pretreatment coefficients whose confidence i
 
 ## 6. Test cases
 
-**Should Trigger:** Guardado, Jenny. 2018. "Office-Selling, Corruption, and Long-Term Development in Peru." American Political Science Review 112(4): 971–995. [doi:10.1017/S000305541800045X](https://doi.org/10.1017/S000305541800045X)
+**SHOULD trigger:** Guardado, Jenny. 2018. "Office-Selling, Corruption, and Long-Term Development in Peru." American Political Science Review 112(4): 971–995. [doi:10.1017/S000305541800045X](https://doi.org/10.1017/S000305541800045X)
 
 Guardado (2018) compares office prices in provinces with high and low *repartimiento* potential around European wars (pp. 976–78). She says that insignificant prewar coefficients make parallel trends likely to hold (p. 978; Figure 3 and Table 2, pp. 978–79), although she also checks time-varying confounders (p. 978). Checks (a) and (b) should run. I used her [replication data](https://doi.org/10.7910/DVN/TI5BPV), Table 2 column 2, and Figure 3's pointwise test to calculate illustrative power. Using the average event year among treated observations for each binned period, the test would detect a linear trend large enough to explain the reported 4+ coefficient only about 19% of the time. This uses ordinary standard errors, not the paper's wild-cluster-bootstrap test (p. 979).
 
-**Should NOT Trigger:** Card, David, and Alan B. Krueger. 1994. "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." American Economic Review 84(4): 772–793.
+**Should NOT trigger:** Card, David, and Alan B. Krueger. 1994. "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." American Economic Review 84(4): 772–793.
 
 Card and Krueger (1994) compare restaurant employment in New Jersey and Pennsylvania before and after New Jersey raised its minimum wage (pp. 772, 778). They surveyed restaurants once before and once after the increase (pp. 773–74), so they could not test several pre-treatment coefficients or rely on an insignificant pre-trend. Instead, they discuss seasonality and compare affected restaurants with initially higher-wage restaurants within New Jersey (pp. 773, 778–79).

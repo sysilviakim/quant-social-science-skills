@@ -1,24 +1,26 @@
 # Dropping Experimental Subjects Who Fail a Manipulation Check
 
+**Full citation:** Aronow, Peter M., Jonathon Baron, and Lauren Pinson. 2019. “A Note on Dropping Experimental Subjects who Fail a Manipulation Check.” *Political Analysis* 27(4): 572–589. https://doi.org/10.1017/pan.2019.5.
+
 **Contributor:** Sang-un Youn
 
-**Full citation:** Aronow, Peter M., Jonathon Baron, and Lauren Pinson. 2019. “A Note on Dropping Experimental Subjects who Fail a Manipulation Check.” *Political Analysis* 27(4): 572–589. https://doi.org/10.1017/pan.2019.5.
+---
 
 ## 1. What the paper establishes
 
-Manipulation checks are often considered as a process of producing more reliable and robust outcomes for inferring the effect of the treatment under experimental conditions. This paper, however, argues that processing a manipulation check through dropping the subjects after the treatment has been assigned may lead to an increased bias in producing the experimental outcome. Likewise, if the experimental analysis was conducted based on subjects that includes those who failed the manipulation test, they produce a consistent estimand that infers a well-defined causal effect. 
+Manipulation checks are often considered as a process of producing more reliable and robust outcomes for inferring the effect of the treatment under experimental conditions. This paper, however, argues that processing a manipulation check through dropping the subjects after the treatment has been assigned may lead to an increased bias in producing the experimental outcome. Likewise, if the experimental analysis was conducted based on subjects that includes those who failed the manipulation test, they produce a consistent estimand that infers a well-defined causal effect.
 
 ## 2. Checks for a reviewer
 
 (a) Check whether the paper conducting an experimental study explicitly notes that it has conducted a manipulation test among subjects for the sake of dropping a subset of subjects that have failed to meet the test's criteria following treatment assignment. Some papers or dissertations may vaguley note the readers on their research conduct, thus the review may have diffculties in identifying whether the experiment has conducted the manipulation test in the first place. ⇒ 572 (and footnote)
 
-(b) Check whether the paper's treatment itself affects whether the subject can pass the manipulation test. If so, including the subjects discarded through manipulation check in this case should not be appropriate, as it implies the manipulation test and the treatment are not independent. If not, the paper should be 
+(b) Check whether the paper's treatment itself affects whether the subject can pass the manipulation test. If so, including the subjects discarded through manipulation check in this case should not be appropriate, as it implies the manipulation test and the treatment are not independent. If not, the paper should be
 
 (c) Check whether the paper's exclusion of subjects who failed the manipulation test was conducted after the treatment assignment or _after_. If the manipulation check was conducted before treatment assignment, the methodology stated in this paper should not be applied. This is because of the reasons similar to why the reviewer should check (b), screening the subjects before the treatment assignment may be required since the ability to pass the manipulation test is directly related to the effectivenss of the treatment; thus the manipulation test and the treatment is not independent. On the contrary, the papers dropping the subjects after the manipulation check should be applicable with the methodology in which this paper states.
 
-(d) Check whether the paper explicitly justifies dropping the subjects after 
+(d) Check whether the paper explicitly justifies dropping the subjects after
 
-check whether the paper openly mentions that they have dropped the subjects after treatment and justifies it due to the fact that the proportion of subjects dropped were similar across different groups. ⇒ 575 + 576 
+check whether the paper openly mentions that they have dropped the subjects after treatment and justifies it due to the fact that the proportion of subjects dropped were similar across different groups. ⇒ 575 + 576
 
 ## 3. Evidence
 
@@ -26,9 +28,9 @@ For each retained check, give a short exact quotation and printed page number, f
 
 **For (a).** "[R]esearchers may be inclined to exclude those subjects who fail the manipulation check from further analysis. This practice is common across the social sciences" (p.572). Authors further note such conduct have been found in "top journals in multiple disciplines over recent years, including the _American Political Science Review_"(p.572). But Footnote 1 on p. 572 notes that the authors had to _suspect_ whether it had conducted a manipulation attention check and further had to make contact with the authors via e-mail in order to verify whether such practice indeed took place, meaning that the review may not be sure whether the research design comprised of manipulation checks.
 
-For (b). Among the three assumptions by the authors in which they make to proceed the claim, the second assumption indicates _ignorability_ where "the treatment is not systematically related to potential outcomes or potential manipulation check results, as would be ensured by random assignment of the treatment"(p.573). This does not mean the relationship between the treatment and the potential manipulation check results should _always_ be independent, because discarding subjects who are unable to pass manipulation checks can be "unproblematic if the inferential target is the average potential outcomes among those who pass the manipulation check"(p.574). 
+For (b). Among the three assumptions by the authors in which they make to proceed the claim, the second assumption indicates _ignorability_ where "the treatment is not systematically related to potential outcomes or potential manipulation check results, as would be ensured by random assignment of the treatment"(p.573). This does not mean the relationship between the treatment and the potential manipulation check results should _always_ be independent, because discarding subjects who are unable to pass manipulation checks can be "unproblematic if the inferential target is the average potential outcomes among those who pass the manipulation check"(p.574).
 
-For (c). The same evidence that proves (b) can be used for (c) as well, as the author explicitly argues the paper can drop the subjects "if a check precedes treatment (e.g., a pretreatment attention check), then discarding subjects is not a problem, at least for characterizing effects for a well-defined subpopulation of units(p.574)". 
+For (c). The same evidence that proves (b) can be used for (c) as well, as the author explicitly argues the paper can drop the subjects "if a check precedes treatment (e.g., a pretreatment attention check), then discarding subjects is not a problem, at least for characterizing effects for a well-defined subpopulation of units(p.574)".
 
 For (d).
 
@@ -56,6 +58,6 @@ For every signature you keep, state what a reviewer should ask the authors to re
 
 ## 6. Test cases
 
-**SHOULD trigger — [paper you verified].** Full citation: [ ]. The check occurred [before/after] treatment, and the manuscript [did/did not] exclude or condition on failures. Identify the exact analysis or page that makes the reviewer check applicable.
+**SHOULD trigger: [paper you verified].** Full citation: [ ]. The check occurred [before/after] treatment, and the manuscript [did/did not] exclude or condition on failures. Identify the exact analysis or page that makes the reviewer check applicable.
 
-**Should NOT trigger — [near-miss you verified].** Full citation: [ ]. Explain which trigger condition is absent—for example, the check was measured before treatment, or all randomized participants remained in the primary treatment-effect analysis. Do not choose a paper merely because it lacks a manipulation check.
+**Should NOT trigger: [near-miss you verified].** Full citation: [ ]. Explain which trigger condition is absent, for example, the check was measured before treatment, or all randomized participants remained in the primary treatment-effect analysis. Do not choose a paper merely because it lacks a manipulation check.

@@ -1,8 +1,10 @@
 # Difference-in-Differences with Variation in Treatment Timing
 
+**Full citation:** Goodman-Bacon, Andrew. 2021. "Difference-in-Differences with Variation in Treatment Timing." Journal of Econometrics 225 (2): 254–77.
+
 **Contributor:** Yejin Park
 
-**Full citation:** Goodman-Bacon, Andrew. 2021. "Difference-in-Differences with Variation in Treatment Timing." Journal of Econometrics 225 (2): 254–77.
+---
 
 ## 1. What the paper establishes
 

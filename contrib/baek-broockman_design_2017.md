@@ -1,8 +1,10 @@
 # The Design of Field Experiments with Survey Outcomes
 
+**Full citation:** Broockman, David E., Joshua L. Kalla, and Jasjeet S. Sekhon. 2017. "The Design of Field Experiments with Survey Outcomes: A Framework for Selecting More Efficient, Robust, and Ethical Designs." *Political Analysis* 25 (4): 435–64. [doi:10.1017/pan.2017.27](https://doi.org/10.1017/pan.2017.27)
+
 **Contributor:** Eojin Baek
 
-**Full citation:** Broockman, David E., Joshua L. Kalla, and Jasjeet S. Sekhon. 2017. "The Design of Field Experiments with Survey Outcomes: A Framework for Selecting More Efficient, Robust, and Ethical Designs." *Political Analysis* 25 (4): 435–64. [doi:10.1017/pan.2017.27](https://doi.org/10.1017/pan.2017.27)
+---
 
 ## 1. What the paper establishes
 
@@ -48,6 +50,6 @@ All three checks apply only to field experiments with survey outcomes (p. 435). 
 
 ## 6. Test cases
 
-**Should trigger:** Broockman, David, and Joshua Kalla. 2016. "Durably Reducing Transphobia: A Field Experiment on Door-to-Door Canvassing." *Science* 352(6282): 220–224. [doi:10.1126/science.aad9713](https://doi.org/10.1126/science.aad9713) Baseline respondents were randomized to a canvass or a recycling placebo conversation. Only those who came to the door in either condition were resurveyed online (pp. 222–223). Check (b) applies with all four sub-checks. A reviewer would look for the supplementary balance and assumption tests the authors cite (p. 223).
+**SHOULD trigger:** Broockman, David, and Joshua Kalla. 2016. "Durably Reducing Transphobia: A Field Experiment on Door-to-Door Canvassing." *Science* 352(6282): 220–224. [doi:10.1126/science.aad9713](https://doi.org/10.1126/science.aad9713) Baseline respondents were randomized to a canvass or a recycling placebo conversation. Only those who came to the door in either condition were resurveyed online (pp. 222–223). Check (b) applies with all four sub-checks. A reviewer would look for the supplementary balance and assumption tests the authors cite (p. 223).
 
-**Should not trigger:** Paler, Laura. 2013. "Keeping the Public Purse: An Experiment in Windfalls, Taxes, and the Incentives to Restrain Government." *American Political Science Review* 107(4): 706–725. [doi:10.1017/S0003055413000415](https://doi.org/10.1017/S0003055413000415) Control households receive placebo information during the visit. But the placebo is a content control and is not used to identify compliers. So (b) stays silent.
+**Should NOT trigger:** Paler, Laura. 2013. "Keeping the Public Purse: An Experiment in Windfalls, Taxes, and the Incentives to Restrain Government." *American Political Science Review* 107(4): 706–725. [doi:10.1017/S0003055413000415](https://doi.org/10.1017/S0003055413000415) Control households receive placebo information during the visit. But the placebo is a content control and is not used to identify compliers. So (b) stays silent.

@@ -1,8 +1,10 @@
 # Making the Most of Statistical Analyses: Improving Interpretation and Presentation
 
+**Full citation:** King, Gary, Michael Tomz, and Jason Wittenberg. 2000. "Making the Most of Statistical Analyses: Improving Interpretation and Presentation." American Journal of Political Science 44 (2): 347–61.
+
 **Contributor:** Hanul Kim
 
-**Full citation:** King, Gary, Michael Tomz, and Jason Wittenberg. 2000. "Making the Most of Statistical Analyses: Improving Interpretation and Presentation." American Journal of Political Science 44 (2): 347–61. 
+---
 
 ------------------------------------------------------------------------
 

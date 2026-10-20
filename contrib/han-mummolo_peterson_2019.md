@@ -2,6 +2,8 @@
 
 **Full citation:** Mummolo, Jonathan, and Erik Peterson. 2019. "Demand Effects in Survey Experiments: An Empirical Assessment." *American Political Science Review* 113(2): 517–529. doi:10.1017/S0003055418000837.
 
+---
+
 ## 1. What the paper establishes
 
 Experimenter demand effects (EDEs) arise when participants infer a researcher's hypothesis and respond in ways intended to help confirm it, potentially biasing an experimental treatment effect. Despite frequent concern about EDEs, their prevalence and consequences in survey experiments had received little direct empirical testing. Mummolo and Peterson replicate five existing experimental designs and, independently of each original treatment, randomize the information respondents receive about the experimenter's hypothesis.
@@ -26,7 +28,7 @@ When respondents' preexisting preferences already favor the outcome a researcher
 
 A null result could mean that respondents did not understand the hypothesis, could not produce the requested pattern of answers, or did not want to do so. A hypothesis-guessing manipulation check and an incentive condition help distinguish these explanations. If the paper compares treatment effects across respondents who guessed a hypothesis correctly or incorrectly, check that it does not form these groups using a post-treatment response from the same experiment.
 
-**(e) If a paper argues that EDEs are generally limited, check whether it tested conditions that should make them easier to detect—experienced survey takers, simple treatment contrasts, explicit information about the hypothesis, and incentives to confirm it—and whether exceptions or differences across samples narrow the conclusion.**
+**(e) If a paper argues that EDEs are generally limited, check whether it tested conditions that should make them easier to detect: experienced survey takers, simple treatment contrasts, explicit information about the hypothesis, and incentives to confirm it; and whether exceptions or differences across samples narrow the conclusion.**
 
 Each condition addresses a different obstacle to EDEs: respondents must notice the researcher's expectation, understand how to answer in line with it, and have a reason to do so. The reviewer should identify which obstacles the design actually addresses and assess the claim against any effects consistent with EDEs. These features describe this paper's test; they are not a checklist that every study must adopt.
 
@@ -62,10 +64,10 @@ In a direct EDE study, a response in the predicted direction is labeled demand-d
 
 ## 6. Test cases
 
-**SHOULD trigger:** DeMora, Stephanie L., Jennifer L. Merolla, Brian Newman, and Elizabeth J. Zechmeister. 2024. "Jesus was a Refugee: Religious Values Framing can Increase Support for Refugees Among White Evangelical Republicans." *Political Behavior* 46: 2145–2168. doi:10.1007/s11109-024-09912-2. 
+**SHOULD trigger:** DeMora, Stephanie L., Jennifer L. Merolla, Brian Newman, and Elizabeth J. Zechmeister. 2024. "Jesus was a Refugee: Religious Values Framing can Increase Support for Refugees Among White Evangelical Republicans." *Political Behavior* 46: 2145–2168. doi:10.1007/s11109-024-09912-2.
 
 The authors explicitly say they "intentionally mask the treatment to minimize experimenter demand effects" (p. 2153), placing the frames unobtrusively in an opinion module. Check (a) therefore applies: a reviewer can ask what EDE pathway that placement is supposed to block and how the design supports that rationale. This trigger is a reason to examine the explanation, not evidence that the study is flawed.
 
-**Should NOT trigger:** Ishizuka, Patrick. 2019. "Social Class, Gender, and Contemporary Parenting Standards in the United States: Evidence from a National Survey Experiment." *Social Forces* 98(1): 31–58. doi:10.1093/sf/soy107. 
+**Should NOT trigger:** Ishizuka, Patrick. 2019. "Social Class, Gender, and Contemporary Parenting Standards in the United States: Evidence from a National Survey Experiment." *Social Forces* 98(1): 31–58. doi:10.1093/sf/soy107.
 
 This vignette experiment examines how social class and gender shape judgments about good parenting. Its use of a survey experiment alone does not trigger the EDE-specific checks above. A reviewer should apply them only if the paper also makes a relevant claim about demand effects or justifies a design choice as an EDE precaution.

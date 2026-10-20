@@ -1,8 +1,8 @@
 # Multiplicative Interaction Models
 
-**Contributor:** Jung Hoik
-
 **Full citation:** Hainmueller, Jens, Jonathan Mummolo, and Yiqing Xu. 2019. "How Much Should We Trust Estimates from Multiplicative Interaction Models? Simple Tools to Improve Empirical Practice." *Political Analysis* 27(2): 163–192. doi:10.1017/pan.2018.46.
+
+**Contributor:** Jung Hoik
 
 ---
 
@@ -66,12 +66,10 @@ Flexible estimates therefore provide a direct check on whether the stronger line
 binary or discrete with only a few unique values and the researcher uses a fully saturated model. The authors explicitly recommend a fully saturated model in this setting to estimate the treatment effect at each level of \(X\) (p. 166). Because there is no continuous moderator over which the conditional effect is forced to follow a linear function, the paper's central LIE diagnostic should not trigger merely because the model contains an interaction term.
 
 **Partial application:** lack of common support may affect only part of the
-moderator distribution. If observations and treatment variation are sparse in one tail but adequate elsewhere, the reviewer should restrict substantive
-inference to the supported region rather than reject the entire model (p. 167). Moreover, weak common support does not by itself prove that an estimate is biased if the assumed functional form is correct; the central concern is greater model dependence (p. 167, n. 11).
+moderator distribution. If observations and treatment variation are sparse in one tail but adequate elsewhere, the reviewer should restrict substantive inference to the supported region rather than reject the entire model (p. 167). Moreover, weak common support does not by itself prove that an estimate is biased if the assumed functional form is correct; the central concern is greater model dependence (p. 167, n. 11).
 
 **Does not apply to:** causal-identification problems such as endogeneity or
-omitted-variable bias. The proposed diagnostics address functional-form
-misspecification and common support, not whether \(D\) is causally identified. The authors explicitly state that their checks "cannot help with other common problems such as endogeneity or omitted variables" (p. 187). Those problems generally require improvements in research design rather than a more flexible interaction estimator.
+omitted-variable bias. The proposed diagnostics address functional-form misspecification and common support, not whether \(D\) is causally identified. The authors explicitly state that their checks "cannot help with other common problems such as endogeneity or omitted variables" (p. 187). Those problems generally require improvements in research design rather than a more flexible interaction estimator.
 
 ## 6. Test cases
 

@@ -1,8 +1,10 @@
 # Treatment-Control Comparisons in Natural Experiments
 
-**Contributor: Yang Jaepyo**
-
 **Full citation:** Sekhon, Jasjeet S., and Rocío Titiunik. 2012. “When Natural Experiments Are Neither Natural nor Experiments.” *American Political Science Review* 106(1): 35–57. doi:10.1017/S0003055411000542.
+
+**Contributor:** Yang Jaepyo
+
+---
 
 ## 1. What the paper establishes
 

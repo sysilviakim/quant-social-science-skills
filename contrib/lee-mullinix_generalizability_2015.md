@@ -1,8 +1,10 @@
 # The Generalizability of Survey Experiments
 
+**Full citation:** Mullinix, Kevin J., Thomas J. Leeper, James N. Druckman, and Jeremy Freese. 2015. "The Generalizability of Survey Experiments." *Journal of Experimental Political Science* 2(2): 109-138. https://doi.org/10.1017/XPS.2015.19.
+
 **Contributor:** Nahyeon Lee
 
-**Full citation:** Mullinix, Kevin J., Thomas J. Leeper, James N. Druckman, and Jeremy Freese. 2015. "The Generalizability of Survey Experiments." *Journal of Experimental Political Science* 2(2): 109-138. https://doi.org/10.1017/XPS.2015.19.
+---
 
 ## 1. What the paper establishes
 
@@ -26,7 +28,7 @@ Whether an experimental result travels beyond its sample depends on whether trea
 
 ## 4. Scope
 
-**Check (a) applies** when a paper recruits a convenience sample and uses it to make a claim about people beyond those recruited—for example, when an MTurk experiment is described as evidence about the American public. It should stay quiet when the paper defines its target as the recruited participants and makes no wider claim. It should also stay quiet as a convenience-sample warning when the design uses a probability sample selected to represent the stated target. That does not settle other problems: nonresponse, coverage, or a target that has changed since the survey may still limit a population claim, but those require evidence about those specific problems (pp. 109-113, 117, 123-125).
+**Check (a) applies** when a paper recruits a convenience sample and uses it to make a claim about people beyond those recruited, for example, when an MTurk experiment is described as evidence about the American public. It should stay quiet when the paper defines its target as the recruited participants and makes no wider claim. It should also stay quiet as a convenience-sample warning when the design uses a probability sample selected to represent the stated target. That does not settle other problems: nonresponse, coverage, or a target that has changed since the survey may still limit a population claim, but those require evidence about those specific problems (pp. 109-113, 117, 123-125).
 
 This check concerns the treatment effect the study wants to carry to the target, not whether the sample reproduces every population percentage. A demographic mismatch matters for this paper’s argument only insofar as it signals a possible difference in treatment effects. Conversely, a close demographic match does not by itself establish that effects travel. The reviewer should identify both the estimand and target before deciding whether the claim exceeds the evidence (pp. 123-125).
 
@@ -48,5 +50,4 @@ A manuscript recruits MTurk respondents, then says its findings describe "the Am
 
 **SHOULD trigger:** Coppock, Alexander. 2019. "Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach." *Political Science Research and Methods* 7(3): 613-628. https://doi.org/10.1017/psrm.2018.10. The article compares MTurk experiments with national-sample studies and tests treatment-effect heterogeneity, so the checks about population claims and cross-sample comparisons should run (pp. 613-615, 619-623); this does not imply that Coppock’s analysis fails them.
 
-**SHOULD NOT trigger:** Hainmueller, Jens, and Daniel J. Hopkins. 2015. "The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants." *American Journal of Political Science* 59(3): 529-548. https://doi.org/10.1111/ajps.12138. The authors use a two-wave, nationally representative Knowledge Networks panel recruited through random-digit dialing or address-based sampling, with known selection probabilities and post-stratification weights (p. 535). The convenience-sample checks (a) and (b) should stay silent; the article makes no cross-sample comparison for check (c).
-
+**Should NOT trigger:** Hainmueller, Jens, and Daniel J. Hopkins. 2015. "The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants." *American Journal of Political Science* 59(3): 529-548. https://doi.org/10.1111/ajps.12138. The authors use a two-wave, nationally representative Knowledge Networks panel recruited through random-digit dialing or address-based sampling, with known selection probabilities and post-stratification weights (p. 535). The convenience-sample checks (a) and (b) should stay silent; the article makes no cross-sample comparison for check (c).
