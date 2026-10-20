@@ -14,15 +14,15 @@ Covariates can be useful when they are expected to predict the outcome and impro
 
 ## 2. Checks for a reviewer
 
-(a) Check whether a paper reports balance tests for a clean experiment. First determine whether the experiment was clean: Was random assignment implemented as planned? Did the treatment groups have different rates of attrition? If the experiment was clean, check whether the paper reports or uses balance tests. A journal’s reporting requirements do not make a balance test evidence that randomization succeeded.
+**(a) Check whether a paper reports balance tests for a clean experiment.** First determine whether the experiment was clean: Was random assignment implemented as planned? Did the treatment groups have different rates of attrition? If the experiment was clean, check whether the paper reports or uses balance tests. A journal’s reporting requirements do not make a balance test evidence that randomization succeeded.
 
-(b) Check why the paper includes covariates. Distinguish covariates selected in advance because they were expected to predict the outcome and improve precision from covariates added because a balance test showed an imbalance. If the randomization or attrition process was compromised, assess that problem separately; adding covariates does not by itself restore a clean experiment.
+**(b) Check why the paper includes covariates.** Distinguish covariates selected in advance because they were expected to predict the outcome and improve precision from covariates added because a balance test showed an imbalance. If the randomization or attrition process was compromised, assess that problem separately; adding covariates does not by itself restore a clean experiment.
 
-(c) If covariates were selected based on a balance test, check when the selection rule was set. Determine whether the rule was specified before the balance results were examined and whether the reported inference accounts for this selection. In a clean experiment, observed imbalance alone does not show that a covariate predicts the outcome or that including it will improve precision.
+**(c) If covariates were selected based on a balance test, check when the selection rule was set.** Determine whether the rule was specified before the balance results were examined and whether the reported inference accounts for this selection. In a clean experiment, observed imbalance alone does not show that a covariate predicts the outcome or that including it will improve precision.
 
-(d) Check whether the paper selected covariates because they produced the most statistically significant results. Look for evidence that the authors tried several covariate specifications and reported the one with the smallest p-value or the clearest findings. The paper identifies this as an unjustified, outcome-driven reason for including covariates.
+**(d) Check whether the paper selected covariates because they produced the most statistically significant results.** Look for evidence that the authors tried several covariate specifications and reported the one with the smallest p-value or the clearest findings. The paper identifies this as an unjustified, outcome-driven reason for including covariates.
 
-(e) Check whether the paper uses a balance table to claim that randomization succeeded or failed. A balance table describes observed differences between groups; it does not, by itself, establish whether the assignment procedure worked. Check the randomization procedure and whether implementation errors or differential attrition occurred before deciding how to interpret the table.
+**(e) Check whether the paper uses a balance table to claim that randomization succeeded or failed.** A balance table describes observed differences between groups; it does not, by itself, establish whether the assignment procedure worked. Check the randomization procedure and whether implementation errors or differential attrition occurred before deciding how to interpret the table.
 
 ## 3. Evidence
 

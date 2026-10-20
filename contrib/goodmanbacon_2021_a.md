@@ -2,7 +2,7 @@
 
 **Full citation:** Goodman-Bacon, Andrew. 2021. "Difference-in-Differences with Variation in Treatment Timing." _Journal of Econometrics_ 225 (2): 254–77.
 
-**Contributor:** 카린 | Caitlin Manchester
+**Contributor:** Caitlin Manchester
 
 ---
 
@@ -12,15 +12,15 @@ The paper shows that with variation in treatment timing, the TWFEDD estimator is
 
 ## 2. Checks for a reviewer
 
-(a) **Check whether the paper exploits variation across groups of units that receive treatment at different times.**
+**(a) Check whether the paper exploits variation across groups of units that receive treatment at different times.**
 
-(b) **If the paper uses TWFE with time-varied treatment, check whether already-treated units act as controls for later treated groups.**
+**(b) If the paper uses TWFE with time-varied treatment, check whether already-treated units act as controls for later treated groups.**
 
-(c) **If the paper uses TWFE with time-varied treatment, check whether the author assumes treatment effects do not change over time within timing groups (Δ ATT = 0) when already-treated units serve as control.** When this assumption is violated, TWFE regressions may result in negative weighting and bias the outcome away from VWATT.
+**(c) If the paper uses TWFE with time-varied treatment, check whether the author assumes treatment effects do not change over time within timing groups (Δ ATT = 0) when already-treated units serve as control.** When this assumption is violated, TWFE regressions may result in negative weighting and bias the outcome away from VWATT.
 
-(d) **If the paper uses TWFE with time-varied treatment, check whether the author defines the target estimand, and whether the TWFE coefficient is noted as ATT or VWATT.** Under Goodman-Bacon’s conditions, TWFE identifies VWATT, which only equals standard ATT under constant treatment effects over time assumption.
+**(d) If the paper uses TWFE with time-varied treatment, check whether the author defines the target estimand, and whether the TWFE coefficient is noted as ATT or VWATT.** Under Goodman-Bacon’s conditions, TWFE identifies VWATT, which only equals standard ATT under constant treatment effects over time assumption.
 
-(e) **If the paper uses TWFE with time-varied treatment, check for time-varying covariates.** Adding covariates is thought to make a “common trends” assumption more plausible but can introduce a new source of identifying variation. Controlling for them may also absorb some of the treatment effect.
+**(e) If the paper uses TWFE with time-varied treatment, check for time-varying covariates.** Adding covariates is thought to make a “common trends” assumption more plausible but can introduce a new source of identifying variation. Controlling for them may also absorb some of the treatment effect.
 
 ## 3. Evidence
 
@@ -36,11 +36,11 @@ For (e). It is noted that “[m]ost applications, however, include time-varying 
 
 ## 4. Scope
 
-Applies to: causal DiD studies where TWFEDD with time-varied treatment is used. Check (a) is triggered as a screening check when treatment timing variation is the condition under which TWFE combines numerous 2x2 DD comparisons. Following checks only apply if TWFE is used. Checks (b), (c), (d) apply when conventional TWFE is used. Check (e) apples when time-varying covariates are introduced. If common trends assumption applies, TWFE differs from VWATT by -Δ ATT, pulling up the estimate relative to VWATT. This may balance out, leaving a near-zero TWFE estimate however, and does not mean the research design is invalid (p261). Second-best-sensitivy analysis (supplementary comparison) is the alternative estimators as noted in the conclusion that can deliver causal estimates when TWFEDD cannot (p272).
+**Applies to:** causal DiD studies where TWFEDD with time-varied treatment is used. Check (a) is triggered as a screening check when treatment timing variation is the condition under which TWFE combines numerous 2x2 DD comparisons. Following checks only apply if TWFE is used. Checks (b), (c), (d) apply when conventional TWFE is used. Check (e) apples when time-varying covariates are introduced. If common trends assumption applies, TWFE differs from VWATT by -Δ ATT, pulling up the estimate relative to VWATT. This may balance out, leaving a near-zero TWFE estimate however, and does not mean the research design is invalid (p261). Second-best-sensitivy analysis (supplementary comparison) is the alternative estimators as noted in the conclusion that can deliver causal estimates when TWFEDD cannot (p272).
 
-Not triggered: 2x2 DD where all treated units’ treatment occurs in same period. Papers where already-treated units are excluded from control. Check (a) is not triggered, thus following checks also not triggered.
+**Does not apply to:** 2x2 DD where all treated units’ treatment occurs in same period. Papers where already-treated units are excluded from control. Check (a) is not triggered, thus following checks also not triggered.
 
-Does not directly apply to: DiD studies with variation in treatment timing that use alternative estimator as suggested by Goodman-Bacon, that addresses bias from time-varying treatment effects or allow control over target parameter. Check (a) applies but checks (b)-(e) need assessment of alternative estimator to check for TWFE-like comparisons. For check (b) the presence of already-treated units as controls is not necessarily a failure, as it is a feature of TWFE. Does not necessitate that parallel trends fails(p255).
+**Does not directly apply to:** DiD studies with variation in treatment timing that use alternative estimator as suggested by Goodman-Bacon, that addresses bias from time-varying treatment effects or allow control over target parameter. Check (a) applies but checks (b)-(e) need assessment of alternative estimator to check for TWFE-like comparisons. For check (b) the presence of already-treated units as controls is not necessarily a failure, as it is a feature of TWFE. Does not necessitate that parallel trends fails(p255).
 
 ## 5. What failure looks like
 
@@ -48,8 +48,6 @@ A paper includes already-treated units but treats the design as 2x2 DD without a
 
 ## 6. Test cases
 
-**SHOULD trigger:** Beck, Levine, Levkov. 2010. “Big Bad Banks? The Winners and Losers from Bank Deregulation in the United States.” _J. Finance_ 65(5): 1637-1667.
-Paper uses DiD variation in treatment timing with TWFE by studying cross-state, cross-time variation in timing of branch deregulation, flagging check (a). It takes earlier-treated states (states which deregulated earlier) as controls against later-treated states, which is highly likely to affect the estimates weights, flagging check (b). The authors also acknowledge the effect on inequality grows for roughly eight years here deregulation, which is evidence or dynamic treatment effects, flagging check (c). The authors do not define the target estimand, and only label the coefficient as the effect of deregulation on inequality, not ATT or VWATT. Note, this does not mean their coefficient is necessarily incorrect, but it should flag check (d). The authors use time-varying covariates such as unemployment, but do not establish that they are unaffected by treatment, thus it should flag check (e) though requires further checking by the reviewer. Additionally, the causal finding is not robust under alternative estimators.
+**SHOULD trigger:** Beck, Levine, Levkov. 2010. “Big Bad Banks? The Winners and Losers from Bank Deregulation in the United States.” _J. Finance_ 65(5): 1637-1667. Paper uses DiD variation in treatment timing with TWFE by studying cross-state, cross-time variation in timing of branch deregulation, flagging check (a). It takes earlier-treated states (states which deregulated earlier) as controls against later-treated states, which is highly likely to affect the estimates weights, flagging check (b). The authors also acknowledge the effect on inequality grows for roughly eight years here deregulation, which is evidence or dynamic treatment effects, flagging check (c). The authors do not define the target estimand, and only label the coefficient as the effect of deregulation on inequality, not ATT or VWATT. Note, this does not mean their coefficient is necessarily incorrect, but it should flag check (d). The authors use time-varying covariates such as unemployment, but do not establish that they are unaffected by treatment, thus it should flag check (e) though requires further checking by the reviewer. Additionally, the causal finding is not robust under alternative estimators.
 
-**Should NOT trigger:** Ariana, Pradiptyo, Afifah. 2026.
-”Assessing the impact of public–private partnership adoption on regional economic growth in Asia.“ _International Economic Policy_ 23(49): 1-26. Flags for DiD with variation in treatment timing, but employs secondary-sensitivity approach, using estimators developed by Callaway and Sant’Anna to account for differences in adoption cohorts and avoiding biases associated with conventional TWFE. Reviewer should still inspect effectiveness of estimator, use of Goodman-Bacon’s R tool is suggested.
+**Should NOT trigger:** Ariana, Pradiptyo, Afifah. 2026. ”Assessing the impact of public–private partnership adoption on regional economic growth in Asia.“ _International Economic Policy_ 23(49): 1-26. Flags for DiD with variation in treatment timing, but employs secondary-sensitivity approach, using estimators developed by Callaway and Sant’Anna to account for differences in adoption cohorts and avoiding biases associated with conventional TWFE. Reviewer should still inspect effectiveness of estimator, use of Goodman-Bacon’s R tool is suggested.

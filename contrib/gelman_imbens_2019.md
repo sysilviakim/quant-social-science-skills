@@ -32,15 +32,15 @@ In regression discontinuity designs, researchers should estimate the two limits 
 
 ## 4. Scope
 
-Applies to: regression discontinuity designs that estimate the limits of the regression function at the threshold using a global polynomial of order three or higher in the forcing variables. Check (a) can be applied to evaluate whether the paper provides a credible basis for believing that polynomial adequately approximates the conditional means.
+**Applies to:** regression discontinuity designs that estimate the limits of the regression function at the threshold using a global polynomial of order three or higher in the forcing variables. Check (a) can be applied to evaluate whether the paper provides a credible basis for believing that polynomial adequately approximates the conditional means.
 
-Does not apply to: regression discontinuity designs using only local or global low-order polynomials.
+**Does not apply to:** regression discontinuity designs using only local or global low-order polynomials.
 
-Does not directly apply to: manuscripts for which the estimator-implied observation weights are neither reported nor recoverable. If the weights cannot be identified, check (b) cannot be applied.
+**Does not directly apply to:** manuscripts for which the estimator-implied observation weights are neither reported nor recoverable. If the weights cannot be identified, check (b) cannot be applied.
 
-Does not directly apply to: manuscripts for which estimates across polynomial orders cannot be calculated from the reported data. If alternative-order estimates are calculable but not reported, check (c) still applies; it could note the missing sensitivity analysis.
+**Does not directly apply to:** manuscripts for which estimates across polynomial orders cannot be calculated from the reported data. If alternative-order estimates are calculable but not reported, check (c) still applies; it could note the missing sensitivity analysis.
 
-Does not directly apply to: manuscripts in which the sample size or support of the forcing variable is too limited to construct placebo-threshold exercise with enough observations on both sides of the pseudo-threshold. Check (d) works in a setting where no discontinuity is expected.
+**Does not directly apply to:** manuscripts in which the sample size or support of the forcing variable is too limited to construct placebo-threshold exercise with enough observations on both sides of the pseudo-threshold. Check (d) works in a setting where no discontinuity is expected.
 
 ## 5. What failure looks like
 

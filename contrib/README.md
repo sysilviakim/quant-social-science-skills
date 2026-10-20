@@ -14,8 +14,7 @@ independent readings can be compared.
 
 ## Mechanics
 
-1. Copy the template below into `<lastname>-<bibkey>.md`.
-   Example: `kim-roth_pretest_2022.md`.
+1. Copy the template below into `<bibkey>.md`, where the bibkey is the paper's author surnames and year. Example: `roth_2022.md`.
 2. Write the memo. About 1,500 words.
 3. Submit the completed `.md` file through the course submission channel.
 4. Submit one `.md` file per paper.

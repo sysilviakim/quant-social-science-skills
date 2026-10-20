@@ -12,11 +12,11 @@ Linear fixed effects regression reduces time-invariant confounding in the estima
 
 ## 2. Checks for a reviewer
 
-**(a)** Check whether the counterfactual shift in X describing the effect is justified by the within-unit variation used for estimation.
+**(a) Check whether the counterfactual shift in X describing the effect is justified by the within-unit variation used for estimation.**
 
-**(b)** Check whether the paper identifies how large the described shift in X is relative to the within-unit variation. Knowing this ratio (a multiple of the residualized standard deviation) lets readers judge how often a change of the described size occurs within units in the real world, and how much weight the substantive significance of the reported effect can bear. In Mummolo and Peterson’s (2018) replications, the large ratio indicates that the change is hard to occur within-units. There is no exact limit for an acceptable ratio.
+**(b) Check whether the paper identifies how large the described shift in X is relative to the within-unit variation.** Knowing this ratio (a multiple of the residualized standard deviation) lets readers judge how often a change of the described size occurs within units in the real world, and how much weight the substantive significance of the reported effect can bear. In Mummolo and Peterson’s (2018) replications, the large ratio indicates that the change is hard to occur within-units. There is no exact limit for an acceptable ratio.
 
-**(c)** Check the paper considers which outcome scale is most relevant, both in the outcome’s units and in standard deviations of the original and transformed outcome. The substance of the particular study should guide scale is most relevant.
+**(c) Check the paper considers which outcome scale is most relevant, both in the outcome’s units and in standard deviations of the original and transformed outcome.** The substance of the particular study should guide scale is most relevant.
 
 ## 3. Evidence
 

@@ -12,15 +12,15 @@
 
 ## 2. Checks for a reviewer
 
-(a) 이중차분법(DID)이 활용되었을 경우, 저자가 평행 추세 가정을 명시적으로 언급하는지, 그리고 그 이전의 집단 간 차이를 명시하는지 확인한다.
+**(a) 이중차분법(DID)이 활용되었을 경우, 저자가 평행 추세 가정을 명시적으로 언급하는지, 그리고 그 이전의 집단 간 차이를 명시하는지 확인한다.**
 
-(b) 저자가 집단 간 관찰할 수 없는 교란변수들의 영향력을 확인하기 위하여 다음과 같은 설계를 구상했었거나 실제로 착수했는지를 본다: 비교적 크기는 작지만 동질적인 표본들을 사용한 검정, 서로 이질적인 변수를 가진 통제집단들을 활용한 검정, 민감도 분석.
+**(b) 저자가 집단 간 관찰할 수 없는 교란변수들의 영향력을 확인하기 위하여 다음과 같은 설계를 구상했었거나 실제로 착수했는지를 본다: 비교적 크기는 작지만 동질적인 표본들을 사용한 검정, 서로 이질적인 변수를 가진 통제집단들을 활용한 검정, 민감도 분석.**
 
-(c) 관찰자료를 도구변수를 관찰가능한 자연실험으로서 사용한다면, 저자가 진작(encouragement)과 처치의 차이를 인지하고 있는지 본다.
+**(c) 관찰자료를 도구변수를 관찰가능한 자연실험으로서 사용한다면, 저자가 진작(encouragement)과 처치의 차이를 인지하고 있는지 본다.**
 
-(d) 회귀단절 모형을 드러내는 자연실험을 언급한다면, 저자가 효과의 국소성에 대하여 명시적으로 언급하였는지 본다.
+**(d) 회귀단절 모형을 드러내는 자연실험을 언급한다면, 저자가 효과의 국소성에 대하여 명시적으로 언급하였는지 본다.**
 
-(e) 위와 같은 인과추론을 목표로 하는 방법론이 아닌, 회귀분석 혹은 매칭 등을 사용하면서 처치 집단과 통제 집단의 (처치 이외의) 동질성을 정초하려는 시도들에서, 저자가 위 방법이 양측 집단의 동질성을 보장하지 않음을 명시적으로 확인하는지 본다.
+**(e) 위와 같은 인과추론을 목표로 하는 방법론이 아닌, 회귀분석 혹은 매칭 등을 사용하면서 처치 집단과 통제 집단의 (처치 이외의) 동질성을 정초하려는 시도들에서, 저자가 위 방법이 양측 집단의 동질성을 보장하지 않음을 명시적으로 확인하는지 본다.**
 
 ## 3. Evidence
 
@@ -32,14 +32,13 @@
 
 (d) 저자들은 회귀단절모형의 문제를 다음과 같이 언급한다. “The RD estimate is necessarily local: it only applies to some limited range of units above and below the threshold, but not to all units.”(p. 199) 회귀단절모형을 사용하는 경우 표본의 동질성은 처치와 비처치가 갈리는 특정 변수의 특정 지점의 근방의 수치를 보이는 국소적 수준에서만 보장될 수 있다. 처치집단과 통제집단이 서로 너무 이질적인 경우 회귀단절모형을 사용한 인과효과는 타당하게 추정되지 못할 수 있다.
 
-(e) 저자들은 가용한 통제변수를 전부 투입하여 처치 이전에 서로 동질적인 처치집단과 통제집단을 구성할 수 있다는 아이디어는 반증 불가능한 가정에 불과하다고 주장한다. "The control group under this strategy is a good counterfactual since we observe and adjust for all the covariates that make these units different from the treated group. Critically, this assumption is nonrefutable, insofar as it cannot be verified
-with observed data (Manski 2007)(p. 195)"
+(e) 저자들은 가용한 통제변수를 전부 투입하여 처치 이전에 서로 동질적인 처치집단과 통제집단을 구성할 수 있다는 아이디어는 반증 불가능한 가정에 불과하다고 주장한다. "The control group under this strategy is a good counterfactual since we observe and adjust for all the covariates that make these units different from the treated group. Critically, this assumption is nonrefutable, insofar as it cannot be verified with observed data (Manski 2007)(p. 195)"
 
 ## 4. Scope
 
-적용 가능: 본 논문의 적용 범위는 관찰자료를 사용하면서 인과효과를 추정하려 시도하는 논문들 전체에 걸쳐서 작동된다. 즉 명시적 횡단면 가정, DID, IV와 RD를 포함한 자연실험, 통제 불가능한 교란변수들이 이론적으로 예측될 수 있는 상황에서는 사용 가능하다.
+**Applies to:** 본 논문의 적용 범위는 관찰자료를 사용하면서 인과효과를 추정하려 시도하는 논문들 전체에 걸쳐서 작동된다. 즉 명시적 횡단면 가정, DID, IV와 RD를 포함한 자연실험, 통제 불가능한 교란변수들이 이론적으로 예측될 수 있는 상황에서는 사용 가능하다.
 
-적용 불가능: RCT와 같은 실제 실험 연구들. 실험실에서 무작위로 표본을 배치한 경우 거의 대부분의 경우 표본의 동질성이 보장되므로, 처치의 효과가 일반적인 인과효과로 추정될 수 있다.
+**Does not apply to:** RCT와 같은 실제 실험 연구들. 실험실에서 무작위로 표본을 배치한 경우 거의 대부분의 경우 표본의 동질성이 보장되므로, 처치의 효과가 일반적인 인과효과로 추정될 수 있다.
 
 ## 5. What failure looks like
 
