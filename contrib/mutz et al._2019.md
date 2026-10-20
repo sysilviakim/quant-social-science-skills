@@ -1,0 +1,61 @@
+# Balance Testing in Clean Data
+
+**Contributor:** Nayoung Kim
+
+**Full citation:** Mutz, Diana C., Robin Pemantle, and Philip Pham. 2019. "The Perils of Balance Testing in Experimental Design: Messy Analyses of Clean Data." The American Statistician 73 (1): 32–42. 
+
+## 1. What the paper establishes
+
+Balance testing is widely treated as a standard practice in experimental research, and some journal guidelines require baseline tables. However, Mutz et al. argue that balance testing can undermine statistical inference when the experimental data are clean. They define a clean experiment as one in which random assignment was implemented properly and differential attrition did not occur. Balance Test and Adjust (BT&A)—testing for covariate imbalance and then adding imbalanced covariates to the model—can cause several problems: confidence statements may be invalid; the analysis may use the wrong statistical model; with enough covariates, researchers may be able to produce almost any result; and, in typical settings, BT&A can make a result appear statistically significant by pushing its p-value below a conventional threshold.
+
+Covariates can be useful when they are expected to predict the outcome and improve precision. However, researchers should select them in advance, based on that expected relationship with the outcome, rather than adding them after a balance test shows an imbalance. If random assignment was implemented incorrectly or treatment groups had different rates of attrition, the study may not be a clean randomized experiment. Reviewers should examine the assignment and attrition procedures and interpret the results with care. Adding covariates alone cannot repair a failure in random assignment.
+
+## 2. Checks for a reviewer
+
+(a) Check whether a paper reports balance tests for a clean experiment. First determine whether the experiment was clean: Was random assignment implemented as planned? Did the treatment groups have different rates of attrition? If the experiment was clean, check whether the paper reports or uses balance tests. A journal’s reporting requirements do not make a balance test evidence that randomization succeeded.
+
+(b) Check why the paper includes covariates. Distinguish covariates selected in advance because they were expected to predict the outcome and improve precision from covariates added because a balance test showed an imbalance. If the randomization or attrition process was compromised, assess that problem separately; adding covariates does not by itself restore a clean experiment.
+
+(c) If covariates were selected based on a balance test, check when the selection rule was set. Determine whether the rule was specified before the balance results were examined and whether the reported inference accounts for this selection. In a clean experiment, observed imbalance alone does not show that a covariate predicts the outcome or that including it will improve precision.
+
+(d) Check whether the paper selected covariates because they produced the most statistically significant results. Look for evidence that the authors tried several covariate specifications and reported the one with the smallest p-value or the clearest findings. The paper identifies this as an unjustified, outcome-driven reason for including covariates.
+
+(e) Check whether the paper uses a balance table to claim that randomization succeeded or failed. A balance table describes observed differences between groups; it does not, by itself, establish whether the assignment procedure worked. Check the randomization procedure and whether implementation errors or differential attrition occurred before deciding how to interpret the table.
+
+## 3. Evidence
+
+(a) Check whether the paper reports or uses balance tests in a clean experiment. Balance testing can take three forms: displaying a table of baseline differences, statistically testing whether treatment assignment is independent of pretreatment variables, or changing the model to control for covariates found to be imbalanced (p. 32). First check whether the experiment was clean: Was random assignment implemented as planned? Were treatments delivered? Did differential attrition occur (pp. 33–34)? If the experiment was clean, ask whether the paper uses balance testing to validate randomization or to change the analysis. The authors argue that balance testing can be inappropriate and harmful in clean experiments, including when baseline data are displayed without guidance on how to interpret them (pp. 32, 36).
+
+(b) Check why the paper includes covariates. Covariates may be included to reduce noise and improve precision when they are expected to predict the outcome (pp. 34–35). This is different from adding them because a balance test showed that they were imbalanced. If random assignment was faulty or differential attrition occurred, assess those problems separately; adding covariates alone does not restore a clean experiment (pp. 33–34).
+
+(c) If covariates were selected based on a balance test, check when the selection rule was set and what justified the choice. The authors argue that covariates should be selected based on their expected relationship with the outcome, not simply because they appear imbalanced after treatment assignment (pp. 35–37). Theorem 1 shows that the benefit of including a covariate depends both on how strongly it predicts the outcome and on how imbalanced it is across treatment groups (p. 36). Since imbalance alone does not reveal the covariate’s predictive power, reviewers should check whether the selection rule was specified before the balance results were examined and whether the analysis accounts for that selection.
+
+(d) Check whether the authors chose covariates because they produced the most significant findings. The authors list choosing a covariate model because it produced the “cleanest, most significant findings” as a reason for including covariates, and call this dishonest (p. 34). Reviewers should look for evidence that authors tried several covariate specifications and reported the one with the smallest p-value or strongest findings. This outcome-driven selection can make results appear more significant than they would under a prespecified analysis (pp. 39–40).
+
+(e) Check whether the paper treats a balance table as proof that randomization succeeded or failed. A balance table shows realized differences between treatment groups, but those differences alone do not establish whether the assignment procedure worked. Random assignment does not guarantee exact balance in every realized experiment, and with many pretreatment variables, some differences are expected by chance (pp. 34–35). Reviewers should examine how random assignment was implemented and whether there were implementation errors or differential attrition before drawing conclusions from the table (pp. 33–34).
+
+
+## 4. Scope 
+
+**Applies to**: Randomized experimental studies with pretreatment covariates, where authors report baseline comparisons or balance tests, or use pretreatment variables in their analysis. Checks (a) and (d) apply when authors use balance-test results or baseline tables to assess whether randomization succeeded or whether the findings are credible. Checks (b) and (c) apply when covariates are included in, or the analysis is otherwise changed because of, observed treatment–covariate imbalance. For checks (b) and (c), reviewers should determine whether the covariate-selection rule was set before the balance results were examined and whether inclusion was justified by the covariate’s expected relationship with the outcome. Theorem 1 shows that the benefit of adjustment depends both on how strongly the covariate predicts the outcome and on its association with treatment assignment; imbalance alone does not establish that adding the covariate will improve precision (pp. 36–37).
+
+**Does not apply in** compromised experiments: this argument(BT&A) is bad idea is only when the data is clean. if the data is messy then you don't need to criticize that a paper offers balancing test. remember that authors suggest two standard of clean data and judge if the data is clean or not based on the randomization process of a paper. if the data is messy, then experiment studies should be treated as observational studies, so that controlling covariates is necessary. These cases should not be treated as ordinary clean experiments. 
+
+**Does not apply to** observational studies: The paper’s main argument concerns the analysis of randomized experiments. In observational research, covariate imbalance has a different role because treatment assignment is not randomized. A reviewer should not apply this memo’s checks as a general prohibition on measuring or adjusting for confounding in observational studies.
+
+
+
+
+## 5. What failure looks like
+
+If a paper claims that randomization was successful only because a balance table shows similar covariates across experimental conditions and no statistically significant differences, this is not enough. The reviewer should check how random assignment was actually implemented. Conversely, a reviewer should not conclude that randomization failed simply because the groups are imbalanced. Statistical inference is based on the distribution of possible results across repeated random assignments. An imbalance in one assignment can occur by chance. For example, getting seven heads in ten coin tosses does not prove that the tosses were not random. Treating this result as evidence of failed randomization and adjusting for it after the fact is not justified by the standard randomization model.
+
+A serious concern arises if a paper first reports a high p-value, then adds covariates because they are imbalanced, and finally reports a lower p-value or a statistically significant result. Selecting covariates after seeing the balance results can change the p-value and make a result appear statistically significant. This post hoc result is less trustworthy, especially if the paper does not report the selection process or account for it in the statistical inference.
+
+
+
+## 6. Test cases
+**SHOULD trigger**: Scherer, Nancy, and Brett Curry. 2010. “Does Descriptive Race Representation Enhance Institutional Legitimacy? The Case of the U.S. Courts.” The Journal of Politics 72(1): 90–104. Mutz et al. quote the authors as conducting tests of demographic differences across experimental conditions and then concluding that random assignment had been established because none of the differences was statistically significant (Mutz et al., pp. 32–33; Scherer and Curry, p. 95). This is a clear case for check (a), because a nonsignificant balance test is presented as evidence that randomization succeeded. It also gives reviewers a reason to inspect whether the baseline comparisons are being used to make claims about the experiment’s credibility. The original article and any supplementary materials should be checked before concluding that the authors made no other qualifications.
+
+**SHOULD NOT trigger**: Gerber, Alan S., and Donald P. Green. 2000. “The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment.” American Political Science Review 94(3): 653–663. Mutz et al. cite this study as an example in which the randomization mechanism went awry (p. 33). The check concerning covariate selection after balance testing in a clean experiment should therefore not trigger as if this were an ordinary clean experiment. The reviewer should instead investigate how the assignment procedure failed and whether the data can still support an experimental interpretation; adding covariates cannot by itself repair a faulty randomization mechanism.
+
