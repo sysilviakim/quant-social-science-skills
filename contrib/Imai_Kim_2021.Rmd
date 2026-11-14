@@ -1,0 +1,41 @@
+---
+title: "Imai_Kim_2021"
+author: "Joshua Seong Jun Kwon"
+date: "2026-11-13"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Imai-Kim_Two-Way-Fixed-Effects_2021
+
+Contributor: Kwon Seong Jun
+Full citation: Imai, Kosuke, and In Song Kim. 2021. "On the Use of Two-Way Fixed Effects Regression Models for Causal Inference with Panel Data." Political Analysis 29(3), 405–415.
+
+## 1. What the paper establishes
+Two-way lineear fixed effects(2FE) regressions are commonly used as a tool for panel data. It is usually assumed that adding unit and time fixed effects automatically controls for unobserved unit-specific and time-specific confounders at the same time. It's also assumed that 2FE is just a multi-period version of the DiD estimator. Imai and Kim use a matching framework to show that both beliefs are wrong. Because no two observations share both the same unit and the same time period, 2FE cannot adjust for unit and time confounders without assuming strict linear additive effects. Instead, it compares observations that have the same treatment status, which creates mismatches. Moreover, once a panel has more than two groups and two periods, standard unweighted 2FE does not equal the multi-period DiD estimator. Instead, the multi-period DiD estimator equals a weighted 2FE regression where some control observations get negative weights.
+
+## 2. Checks for a reviewer
+(a) Check if a paper claims that adding unit and time fixed effects nonparametrically or flexibly removes unobserved unit and time confounders at the same time. No control observation shares both the same unit and the same time period as a treated observation. As a result, 2FE has to combine observations from the same unit, observations from the same time period, and an adjustment set from other units and other periods. Check for any claim that treats standard 2FE as a design-based or model-free method without defending linear additive effects or addressing bias from same-treatment mismatches.
+
+(b) Check if a multi-period panel study where units adopt treatment at different times or switch in and out of treatment calls its unweighted 2FE regression a difference-in-differences estimator. Standard 2FE and DiD give the same answer only in the simple two-group, two-period setup. In a multi-period study, ask either to justify constant linear additive treatment effects or to use an explicit multi-period DiD or panel matching estimator that compares treated units only to valid controls without negative weights.
+
+## 3. Evidence
+For (a), authors show that "the 2FE's ability to simultaneously adjust for the two types of unobserved confounders critically hinges upon the assumption of linear additive effects" (p. 405). In Proposition 1, the counterfactual for a treated observation is built by adding the average of other periods from the same unit and the average of other units from the same period, and then subtracting the average of an adjustment set from other units and periods (p. 407). However, "all of these three averages may include units with the same treatment status as the observation whose counterfactual outcome is being estimated" (p. 408). The authors call these "mismatches" and note that they generally cause attenuation bias (p. 408). Even if a researcher uses a weighted 2FE estimator that drops mismatches within the same unit and time period (Proposition 2, p. 409), the adjustment set still contains observations with the same treatment status that "belong to neither the same unit nor the same time period as the observation being matched with" (p. 410). Therefore, it is "impossible to simultaneously and nonparametrically adjust for unit-specific and time-specific unobserved confounders under the two-way fixed effects framework" (p. 410).
+
+For (b). Applied papers often use the two-group, two-period case to justify 2FE as a general DiD model (p. 405, p. 411, 주석 1번). However, Theorem 1 shows that "under the general panel data settings, the DiD estimator is not equivalent to the standard 2FE estimator. Instead, the multi-period DiD estimator is equal to the weighted 2FE estimator with some observations having negative regression weights" (p. 410). Specifically, "some control observations will have negative regression weights. This occurs when they frequently enter into the adjustment set... for multiple treated observations" (p. 413). Because regression weights should be positive, calling 2FE a DiD estimator "is not warranted unless the linearity assumption is imposed" (p. 413).
+
+## 4. Scope
+(a) applies to observational panel studies that run linear regressions with both unit and time fixed effects and describe the model as a flexible or design-based control for unobserved unit and time confounders. It does not apply on one-way fixed effects models, which only match within units or within time periods and do not need an adjustment set. Also stay silent when a paper openly states and defends linear additive effects.
+
+(b) applies to panel studies with more than two time periods where units get treated at different times or switch in and out of treatment. Stay silent on simple two-group, two-period designs where treatment happens only in the second period for one group, because standard 2FE and nonparametric DiD are identical there (p. 412). Also stay silent when authors already use multi-period DiD or panel matching estimators (p. 413).
+
+## 5. What failure looks like
+Beware of panel papers that write down a standard 2FE regression and simply claim that unit fixed effects remove all time-invariant confounders while year fixed effects remove all common shocks to create a nonparametric DiD design. Flag multi-period studies with staggered or on-and-off treatments that treat the unweighted 2FE coefficient as a clean Average Treatment Effect on the Treated (ATT). Without strict linearity, that estimate relies on mismatched comparisons and differs from the true multi-period DiD estimator.
+
+## 6. Test cases
+SHOULD trigger: Cremaschi, Simone, Nicola Bariletto, and Catherine E. De Vries. 2025. "Without Roots. The Political Consequences of Collective Economic Shocks." American Political Science Review 119(4), 1963–1982. This study should trigger (a) and (b). The authors use municipal panel data across several election cycles in Puglia, Italy, to study how an olive tree disease affected voting. They present their main results as two-way fixed effects DiD estimates of the ATT with municipality and election-year fixed effects. (a) applies because the baseline model relies on unit and time fixed effects to absorb municipal traits and common election shocks across multiple periods. (b) is needed because treating a multi-period 2FE regression as a DiD ATT requires either strict linear additive effects or a check using multi-period DiD estimators. Triggering these checks only means a reviewer should inspect how the paper links 2FE and DiD, not that its findings are wrong.
+
+Should NOT trigger: Folke, Olle, and Johanna Rickne. 2025. "The Class Ceiling in Politics." American Political Science Review 119(3), 1375–1392. It might look like a candidate because it uses multi-election panel data on Swedish politicians and relies on fixed effects regressions to control for local and time factors when comparing promotion rates across social classes. However, the authors do not run a two-way fixed effects model with separate unit and time effects, and they do not claim a DiD design. Instead, they use interacted party-municipality-election fixed effects that compare candidates only within the exact same party, municipality, and election group. Because treated and control observations come from the exact same group rather than being adjusted across separate unit and time dimensions, and no multi-period DiD claim is made, both (a) and (b) should stay silent.
