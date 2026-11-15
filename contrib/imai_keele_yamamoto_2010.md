@@ -1,0 +1,49 @@
+# Identification, Inference and Sensitivity Analysis for Causal Mediation Effects
+
+**Contributor:** Sang-un Youn
+
+**Full citation:** Imai, Kosuke, Luke Keele, and Teppei Yamamoto. 2010. "Identification, Inference and Sensitivity Analysis for Causal Mediation Effects." *Statistical Science* 25(1): 51–71. https://doi.org/10.1214/10-STS321.
+
+---
+
+## 1. What the paper establishes
+
+This paper tries to clarify the causal effect that takes effect through a medium—termed as the average causal mediation effect (ACME). Although causal inference through a mediation itself is not a novel concept established by the authors, it suggests a unique mechanism by separately analyzing the treatment randomization apart from mediation randomization. The authors propose a conditionality under which the ACME can be nonparametically identified. They also suggest a a unique sensitiviy analysis that can be applied in LSME(linear structural equation model) framework. Through these suggestions, the paper contribute to the literatures in theories that infere causal mediation effect by providing a less stricter assumption compared to the past literatures, along with a novel methodology to confirm such relaxed assumptions still provide a reliable potential outcome.
+
+## 2. Checks for a reviewer
+
+**(a) Check whether the paper is trying to establish a causal mechanism that comprise of a mediation effect.** Identify the treatment, mediator, and the potential outcome that is related to the treatment and the mediator. Then, verify that the mediator is a post-treatment variable that occurs before the outcome is realized. The treatment and the mediator under the same pre-treatment condition should be independent from the potential outcome. 
+
+**(b) Check whether there may exist a possible post-treatment confounder in the mechanism.** This means the review must check whether the paper is trying to establish a causal mechanism that comprise of a mediation effect that assumes sequential ignorability. Since treatment randomization does not ensure the randomization of the medium effect, the reviewer should look for a possible omitted variable bias which would make the sequential ignorability proposed by this paper ineffective.
+
+**(c) Check whether the paper deducts the exsistance of the mediation affect by testing all the null hypotheses of the three linear regressions that consist of the LSEM.** The paper should refrain from ruling out mediation effects if $\beta_0$ fails to confirm null hypothesis, because opposing direct and indirect effects can canel each other out and therefore insignificant total effect itself not ruling out the existance of the mediation effect.
+
+**(d) Check whether the paper confirms the robustness of the ACME by applying the sensitivity analysis for possible pre-treatment counfounders.** Take caution and check whether the author also applies this to a post-treatment counfounder, which is beyond the scope of what the sensitivity analysis can offer. For the linear model, ask for the estimated ACME and uncertainty over plausible residual correlations, including where the point estimate changes sign and where its confidence interval includes zero. Require a substantive account of plausible confounder signs and strengths; sensitivity analysis remains conditional on the maintained model and does not repair treatment-induced confounding (pp. 61–62, 64).
+
+## 3. Evidence
+
+**For (a).** A mediator "must be a post-treatment variable that occurs before the outcome is realized" (p. 54). Unlike a controlled effect, the ACME depends on the mediator's potential values under treatment and control because "[t]he causal mediation effects and natural direct effects differ from the _controlled direct effect_ of the mediator [...] and that of the treatment" (p. 55). Equation 1 on p. 54 holds treatment fixed while changing the mediator between these potential values; the definition prevents the paper from relabeling an arbitrary mediator intervention or an association as the treatment's indirect effect.
+
+**For (b).** The required conditional independence ($Y_i(t',m) \perp\!\!\!\!\perp~M_{i}(t) ~|~T_i = t, X_i = x$) "must hold without conditioning on the observed values of post-treatment confounders" (p. 55). The authors distinguish the assumptions directly: "the treatment is first assumed to be ignorable given the pre-treatment covariates," whereas "the mediator variable is assumed to be ignorable given the observed value of the treatment as well as the pre-treatment covariates" (p. 55). For experiments that randomize treatment but merely observe the mediator, they state: "In this case, equation (4) of Assumption 1 is satisfied but equation (5) may not hold for two reasons" (p. 61). This supports requesting separate identification arguments and rules out presenting ordinary adjustment for a treatment-induced confounder as sufficient under Theorem 1.
+
+**For (c).**  The authors explain that "the ACME can be nonzero even when the average total causal effect is zero" (p. 57). They immediately add: "This happens when the mediation effect offsets the direct effect of the treatment" (p. 57). The passage supports rejecting a total-effect significance gate; it does not establish that any particular null result conceals mediation.
+
+**For (d).** "We view sensitivity analysis as an essential part of causal mediation analysis" because identification assumptions are "unverifiable and often are not justified in applied settings" (p. 66). The explicit limit is equally important: the proposed analysis "does not address the possible existence of post-treatment confounders" (p. 61).
+
+## 4. Scope
+
+**Applies to:** either observational research or an experimental research where it attributes a treatment's effect on an outcome to an intermediate variable, whether it uses the term ACME, natural indirect effect, or causal mediation. Both randomized and observational treatment studies can trigger them and such observational research must also defend treatment ignorability.
+
+**Does not apply to:** a direct causal inference without estimating or claiming mediation effects, such as a randomized experiment estimating the total effect of a voter reminder on turnout, a difference-in-differences study estimating the effect of a minimum-wage increase on employment, or a regression-discontinuity study estimating the effect of scholarship eligibility on college enrollment. These examples fall outside scope when the manuscript makes no claim about an indirect effect through an intermediate variable.
+
+**Does not apply to:** purely predictive associations, analyses of pretreatment moderators, or experiments estimating total effects without a mediation decomposition, even when a mechanism is hypothesized. An instrumental-variable analysis does not automatically trigger these checks; its estimand and identifying assumptions must be distinguished from those of an ACME analysis.
+
+## 5. What failure looks like
+
+The paper does not use intermediate variables as an attribution of a treatment effect and lacks clear evidence if the paper insists so. Even if the paper properly comprises mediation effect as its causal mechanism, it explicitly and implicitly acknowledges a possible post-treatment confounder and controls it. The paper neither confirms or checks that the mediator and the treatment—under the same pre-treatment condition—is indpendent to each other. The paper also does not offer a sensitivity analysis that confirms there exists no possible pre-treatment confounders. Failures will evidently occur when the paper tries to conduct a sensitivity analysis for _post_-treatment analysis. The paper also evidently rules of the existance of the mediation effect due to insignificant total effect.
+
+## 6. Test cases
+
+**SHOULD trigger:** LeVan, Carrie. 2020. "Neighborhoods That Matter: How Place and People Affect Political Participation." _American Politics Research_ 48(2): 286-294. It estimates the effect of different neighborhood design which leads to increased or less physical interactions and communication—such as small talks—which would be a tool for explaning vote turnout. The conclusion explicitly calls the target an "indirect effect of physical features on participation" (p. 293). Check (a) should therefore trigger in order to clarify the indirect-effect estimand and whether the two-stage calculation identifies it. Check (b) should also run, because neighborhood talk is an intermediate between neighborhodo design and voting turnout. The review should thus ask whether either variable is itself influenced by neighborhood design and subsequently affects both neighbor talk and turnout and the evidence behind the author's argument. Also, LeVan’s acknowledged residential self-selection problem (pp. 289–290) concerns pretreatment confounding, so it should not be presented as evidence of the particular post-treatment problem in (b).
+
+**Should NOT trigger:** Kim, Sung Eun, Jong Hee Park, Inbok Rhee, and Joonseok Yang. 2023. "Target, Information, and Trade Preferences: Evidence from a Survey Experiment in East Asia." _American Journal of Political Science_ 67(4): 898-914. The experiment varies target-country identity and information about protectionism's costs (pp. 903-904). Table 2 is titled "Decomposition of Causal Effects" (p. 906), which could mistakenly activate a mediation reviewer. Its information and target effects instead compare randomized experimental conditions, as defined in Equations 1-2 (pp. 905-906); they do not decompose an effect through a measured post-treatment mediator. Neither the word "decomposition" nor the discussion of retaliation, interdependence, and reputation makes those estimates ACMEs. The mediation-specific checks should stay silent on these comparisons.
