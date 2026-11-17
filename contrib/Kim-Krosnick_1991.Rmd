@@ -1,0 +1,60 @@
+# Satisficing in Attitude Measures
+
+**Contributor**: Seongmin KIM
+
+**Full citation**: Krosnick, Jon A. 1991. "Response Strategies for Coping with the Cognitive Demands of Attitude Measures in Surveys." Applied Cognitive Psychology 5(3): 213–236. doi:10.1002/acp.2350050305.
+
+
+## 1. What the paper establishes
+
+The paper constructs mechanisms for satisficing during survey experiments on attitude. While answering survey questions, if the answering requires more effort than respondents are willing to or able to give, respondents do not optimize their answer (interpreting, recalling, and judging carefully) but rather satisfice. Satisficing has 6 recognizable answering patterns: response-order effects, agreement with any statement, choosing the status quo or "don't know," identical ratings across items, and random choice, each of which can be mistaken for a real attitude. These patterns should be more common when questions are difficult and respondents have low ability or motivation. Whether satisficing has occured during the survey can be tested through regressions. The author also suggests a formula that helps estimate the probability of respondents satisficing.
+
+## 2. Checks for a reviewer
+
+(a) When a substantive claim rests on options that respondents chose from a list, check whether the order of options was varied while giving the survey and whether the list was presented visually or orally to the respondents. If visually presented, the respondents tend to choose first options while if orally presented the first or last options, leading to under-selection of middle options. If the options of the survey was not varied, check if the paper shows whether there was primacy/recency effects and if the patterns varied with education level or question length.
+
+(b) When a claim rests on agree/disagree, true/false, or yes/no items, check on acquiescence effect. Acquiescence is more common among less educated respondents. Therefore an education gap in agreement rates may partly be a response style rather than a difference in attitudes.
+
+(c) When a claim rests on the high share of "keep things as they are," middle, or "don't know" responses, check if the option was explicitly offered during the survey. If it was explicitly mentioned and the claim is on how high the share of these options are in certain group(s), the respondents may have simply satisficed instead of processing the question thoroughly. If the paper compares groups or studies on these shares, check if the way of presenting the survey could explain the gap.
+
+(d) When a claim rests on a battery of objects rated on a common scale, check where the battery was placed and whether respondents gave identical ratings. Non-differentiation pushes inter-item correlations upward, so a high reliability coefficient for a battery later in the survey may not by itself be an evidence of a coherent attitude but a result of satisfice.
+
+(e) If a paper attributes a response pattern to satisficing, check whether it shows that the pattern varies with task difficulty, ability, or motivation. A pattern that does not vary with these conditions should not be labelled satisficing.
+
+## 3. Evidence
+
+For (a). "[W]eak satisficing seems likely to produce primacy effects under conditions of visual presentation" (p. 4), while under oral presentation "response alternatives in the middle of a list should be less likely to be selected than alternatives at the beginning and end" (p. 5). These predictions suggest the pattern of satisficing a reviewer should expect. The paper recommends an experiment design that "[varies] the order in which response alternatives are presented" (p. 17).
+
+For (b). Acquiescence is "the tendency to agree with or accept any assertion, regardless of its content" (p. 5). It is more common among less educated respondents and with surveys that are faster-paced or that have longer lists of items(pp. 14–15), so an education gap in agreement rate may (partly) reflect response style.
+
+For (c). Explicitly offering a 'status quo' option raises the share choosing it "by between 10 and 40 per cent" (p. 7), and explicitly offering 'don't know' raises its use, especially among the less educated respondents (p. 16). Therefore it is important to know how the survey was presented, and whether the presentation was consistent throughout the whole survey regardless of the respondents.
+
+For (d). Some respondents "fail to differentiate between the objects in their ratings, giving all or almost all of the objects the same rating" (p. 7), and questions later in the survey "makes correlations between ratings on the same scale more positive or less negative" (p. 16). Late batteries therefore look more internally consistent than they would have been without satisficing.
+
+For (e). The paper mentions a test for satisficing explanations. "[If] the prevalence of the response strategy is unrelated to task difficulty, ability and motivation, the hypothesis that the response strategy represents satisficing should be rejected" (p. 14). 
+
+## 4. Scope
+
+Applies to: close-ended attitude questions in surveys, where a substantive claim rests on the distribution of responses or on group differences in them.
+
+(a) is applied to questions that ask respondents to pick from a list. It stays silent when the response is open-ended or numeric. For surveys that use full rankings on a set of items, Atsusaka and Kim (2025) has more precise ranking-specific checks: they show that randomizing item order is not enough and it simply makes random responses uniform rather than removing them.
+
+(b) is applied to agree/disagree, true/false, and yes/no formats. It stays silent on forced choices between opposing viewpoints, which the paper contrasts with agree/disagree formats (p. 17); since acquiescence is agreement “regardless of its content” (p. 5), a format with no assertion to agree with leaves it nothing to act on. Also, the reviewer should not use topic importance (to the respondent) or question location as signals of acquiescence. Acquiescence was not stronger when the topic was unimportant to respondents or when the question appeared later in a questionnaire (p. 15).
+
+(c) is applied when the paper interprets the share of status quo, middle, or "don't know" answers. However it may stay silent when a "don't know" itself is a plausible optimized answer, such as for an issue respondents have never heard of (p. 8), and when the format is held constant across the comparison being made.
+
+(d) is applied to batteries rated on a common scale. It stays silent when identical ratings are plausible on substance, since non-differentiation "may sometimes be the result of a careful consideration" (p. 7). Topic importance to the respondent do not prevent satisficing: non-differentiation was not reduced among those who cared personally about the topic (p. 16).
+
+(e) is applied only to papers that explain a response pattern as satisficing. It stays silent when the paper already shows that the pattern varies with education, question location, or difficulty, as the studies the paper reviews do (pp. 14–16); a paper that reports "don't know" rates without attributing them to satisficing is outside the scope of check (e).
+
+Does not establish: exact sizes of the effect or models to test the papers. The multiplicative formula for satisficing (p. 13) is a proposal, the evidence is "generally consistent" but has some notable contradictions, and "a great deal of future research is necessary" (p. 17). Several findings run against the theory, such as random error being no greater among respondents for whom the topic is unimportant (p. 17). The agent should therefore ask for checks and robustness rather than completely ruling out if there are signals of satisfice unchecked.
+
+## 5. What failure looks like
+
+The results section reports that less educated respondents more often agree with a statement, choose the first option, say "don't know," or pick "keep things as they are," and then interprets the gap as a difference in attitudes. The methods section do not mentions whether the order of the options was varied, whether items were balanced or forced-choice, or whether the status quo and "don't know" were offered explicitly (consistently). Other signs are 1) a long same-scale battery near the end of the questionnaire reported with a high reliability coefficient and no check for identical ratings, 2) a ranked or closed-ended most-important-problem list kept in a fixed order with the most popular answer listed first, or 3) a claim that respondents "satisficed" with no comparison of results across difficulty, ability, or motivation.
+
+## 6. Test cases
+
+SHOULD trigger: Akkerman, Agnes, Cas Mudde, and Andrej Zaslove. 2014. "How Populist Are the People? Measuring Populist Attitudes in Voters." Comparative Political Studies 47(9): 1324–1353. All 14 populism, pluralism, and elitism items are agree/disagree statements (pp. 8–9), every populism item is worded in the same direction where agreeing means closer to populist (Table 1, p. 8), and the only item designed in reversed order was dropped (p. 9; Table 2, p. 11). Check (b) fires: a respondent who agrees regardless of content will score higher on all three scales. This also explains the positive correlation the authors report between populism and pluralism scales, which must have been correlated in opposite direction theoretically (p. 13).
+
+Should NOT trigger: Wlezien, Christopher. 2005. "On the Salience of Political Issues: The Problem with 'Most Important Problem'." Electoral Studies 24(4): 555–579. Near-miss: Krosnick uses the most-important-problem question as an example of a list prone to order effects (Krosnick, p. 4). Unlike the example of Krosnick, the item analyzed here is worded with no response list (Wlezien, p. 2, n. 1), and its answers are counted as “mentions” and sorted into categories afterward (p. 7), so (a) stays silent. The defense spending item does offer “about the right amount” explicitly (p. 17), yet the analysis uses year-to-year changes under unchanging wording (p. 17), so (c) stays silent too.
