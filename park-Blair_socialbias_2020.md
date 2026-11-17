@@ -1,0 +1,40 @@
+# Sensitivity Bias and social reference theory
+
+**Contributor: Jumyeong Park**
+
+**Full citation:** Blair, Graeme, Alexander Coppock, and Margaret Moor. 2020. "When to Worry about Sensitivity Bias: A Social Reference Theory and Evidence from 30 Years of List Experiments." *American Political Science Review* 114(4): 1297–1315.  https://doi.org/10.1017/S0003055420000374
+---
+
+
+## 1. What the paper establishes
+The paper develops a social-reference theory predicting sensitivity bias when respondents have a relevant referent, believe it can infer their answer, perceive its preferred answer, and expect a cost for deviating. It also shows that indirect measures such as list experiments trade reduced sensitivity bias for substantially higher variance, and assesses this trade-off through a meta-analysis of 264 list experiments conducted between 1984 and 2017. The estimated bias varies sharply by domain—averaging +14 percentage points for predicted overreporting and −8 points for predicted underreporting about authoritarian regimes, and −8 points for vote buying—while estimates for racial, religious, and sexual-orientation prejudice are statistically indistinguishable from zero, though limited power makes those null results inconclusive.
+
+
+## 2. Checks for a reviewer
+
+**(a) Check whether a manuscript claiming sensitivity bias identifies a plausible social referent and explains why respondents would expect that referent to infer their answer, prefer a particular response, and impose a cost for a different response.** Do not treat a topic’s sensitivity, by itself, as evidence that responses are biased.
+
+**(b) Check whether a manuscript’s use of a list experiment or another indirect measure is justified by the expected magnitude of bias, the study’s inferential goal, and the effective sample size or statistical power.** If the manuscript interprets a null comparison as evidence that direct responses are unbiased, check whether the study had enough power to detect a substantively meaningful bias.
+
+**(c) Check whether a manuscript’s treatment of the difference between direct-question and list-experiment estimates as an estimate of sensitivity bias is supported by plausible identifying and comparison assumptions.** These include the standard list-experiment assumptions, no differential nonresponse or order effects, no effect of wording differences, and data from the same sample or comparable populations.
+
+## 3. Evidence
+
+**For (a).** The authors state that sensitivity bias occurs “if and only if all four” conditions are present. They specify those conditions as a relevant social referent, the perceived ability to infer the response, a perceived preferred answer, and an expected cost for deviating(p. 1299). This supports asking reviewers to assess those conditions in the study’s actual survey context rather than inferring bias from the topic alone.
+
+**For (b).** The authors note that “the direct question has lower RMSE” for many sample sizes (p. 1303). Under their example assumptions, a list experiment with 2,000 respondents is preferred on RMSE grounds only when the expected bias exceeds 4 percentage points (p. 1304). They separately show that, at this sample size, power to detect a 10-point bias remains well below the conventional target (p. 1304). A reviewer should therefore assess whether the measurement choice and any null conclusion are justified by the study’s inferential goal, expected bias, and sample size.  
+
+**For (c).** When discussing their comparison of direct and list estimates, the authors state that if the auxiliary assumptions are violated, the difference “can no longer be considered an estimate of sensitivity bias” (p. 1307). They identify assumptions including no differential nonresponse, no order effects, no effect of wording differences, and the same sample or samples from the same population. This supports checking that a manuscript’s direct–indirect comparison can be interpreted as sensitivity bias, rather than only as a difference between measurement methods.
+
+## 4. Scope
+**Applies to:** Survey manuscripts that use self-reports of explicit attitudes, beliefs, or behaviors and make claims that sensitivity bias affects—or does not affect—their results. The reviewer should assess whether the four social-reference conditions are plausible in the study’s specific survey context; a sensitive topic alone is not enough (p. 1299). These checks also apply when a study uses a list experiment or another noise-adding indirect measure, especially when it claims that the method reduces bias or interprets a null comparison as evidence that direct responses are unbiased. In those cases, the reviewer should consider the study’s inferential goal, expected bias, sample size, power, and—if direct and list estimates are compared—the assumptions needed to interpret their difference as sensitivity bias (pp. 1303–1307).
+
+**Does not apply to:** Check (a) and list-experiment remedies do not apply when misreporting stems from cognitive or recall failures rather than social-referent sanctions, such as respondents forgetting whether they voted in a past election (pp. 1298–1299). Check (b)’s list-experiment variance and power concerns should not be applied to methods that temporarily separate respondents from their answers, such as secret ballots or physical barriers; the authors distinguish these from methods that add noise and state that they do not typically incur a variance penalty (p. 1312). Check (c) stays silent when a study fields a standalone list experiment without comparing it to a direct question, or when authors explicitly interpret a direct–list gap solely as a difference between measurement methods rather than an estimate of sensitivity bias (p. 1307). These checks also do not apply to conjoint studies that estimate preferences over randomized profiles without claiming sensitivity bias or comparing direct and indirect measures.
+
+## 5. What failure looks like
+A manuscript attributes biased direct responses to a topic’s sensitivity alone, or introduces a list experiment without explaining the expected bias, inferential goal, or whether its sample can support the analysis. It interprets a null direct–list comparison as evidence that sensitivity bias is absent but reports no confidence interval or power for that difference; a wide confidence interval around the list estimate alone does not establish how precisely the difference was estimated. Finally, it labels the raw direct–list gap “sensitivity bias” without addressing the assumptions needed for that interpretation, including question wording and order, nonresponse, sample comparability, and list-experiment design effects (pp. 1303–1307).
+
+## 6. Test cases
+**SHOULD trigger:** Lax, Jeffrey R., Justin H. Phillips, and Alissa F. Stollwerk. 2016. “Are Survey Respondents Lying about Their Support for Same-Sex Marriage? Lessons from a Recent List Experiment.” *Public Opinion Quarterly* 80(2): 510–533. Using an online survey ($N = 1,878$), the authors compare direct-question and list-experiment estimates of same-sex marriage support and conclude that they find no evidence of population-level social desirability bias (pp. 512, 518–521, 525–527). Checks (a)–(c) should run because the paper evaluates sensitivity bias in a private online survey, uses a list experiment, and interprets direct–list comparisons; Check (b) is especially relevant to its subgroup conclusions.
+
+**Should NOT trigger:** Hainmueller, Jens, and Daniel J. Hopkins. 2015. “The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants.” *American Journal of Political Science* 59(3): 529–548. The study uses a conjoint experiment to estimate how randomly varied immigrant-profile attributes affect respondents’ admission choices (p. 530); it does not test for sensitivity bias or compare direct and indirect measures. Although immigration is politically salient, topic sensitivity alone should not trigger these checks.
