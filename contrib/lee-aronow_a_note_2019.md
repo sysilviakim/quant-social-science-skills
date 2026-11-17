@@ -1,0 +1,49 @@
+# A Note on Dropping Experimental Subjects who Fail a Manipulation Check
+
+**Contributor:** Haerin Lee
+  
+**Full citation:** Aronow, Peter M., Jonathon Baron, and Lauren Pinson. 2019. "A Note on Dropping Experimental Subjects Who Fail a Manipulation Check." Political Analysis 27 (4): 572-89.
+
+---
+  
+## 1. What the paper establishes
+Dropping subjects who fail a manipulation check after treatment can create bias of unknown direction and size. As the treatment can affect whether a subject passes the check, a comparison among the subjects who passed loses the comparability that random assignment provided.
+
+Hence, the paper recommends focusing on the intent-to-treat effect from the full sample, or screening subjects with an attention check placed before treatment. The effect among subjects who would pass under every treatment condition can only be bounded, and the bounds are often too wide to be informative.
+  
+## 2. Checks for a reviewer
+**(a) If a paper drops subjects who fail a manipulation check after treatment, check whether it also reports the intent-to-treat effect from the full sample.** The estimate after dropping subjects may overstate the effect, but it may also understate it. Hence, dropping cannot be defended as a conservative choice. The full-sample estimate is identified by random assignment alone, and comparing the two estimates shows how much the result depends on who was dropped.
+
+**(b) If a paper justifies dropping subjects by showing similar failure rates across treatment conditions, or covariate balance among the subjects who passed, check whether it gives any further reason why the treatment could not affect who passes.** Similar failure rates and balance are necessary but not sufficient, as different types of subjects can fail under different treatment conditions even when the rates match. Different failure rates or imbalance show that dropping is problematic, but their absence does not show that it is safe.
+
+**(c) If a paper has already been fielded with a posttreatment manipulation check and claims an effect among subjects who understood the treatment, check whether it reports sharp bounds for that effect instead of the estimate from the subjects who passed.** The first-best is a manipulation that is clear enough that few subjects fail the check, or an attention check that is placed before treatment. As neither can be added after data collection, a second-best is to keep the intent-to-treat effect from the full sample as the main result and report sharp bounds for the subjects who would pass under every treatment condition. The bounds give a range instead of a point estimate, and they widen as failure rates rise. When the bounds for different treatment conditions overlap, the paper cannot claim an effect for this subgroup. The bounds cannot be computed without the number of subjects dropped in each treatment condition, so a reviewer should ask for it when it is missing.
+
+## 3. Evidence
+**For (a).** The paper shows that dropping subjects who fail a manipulation check "is equivalent to inducing differential attrition across treatment arms, which may induce bias of unknown sign and magnitude" (p. 573). As the direction of the bias is unknown, a reviewer cannot rely on the estimate from the subjects who passed. By contrast, "[r]andomization ensures intent-to-treat effects are point identified, and can be estimated simply by examining differences in means" (p. 574), which makes the full-sample estimate the benchmark a reviewer should ask for. The bias does not always favor the authors. In the paper's replication of Press, Sagan, and Valentino (2013), the original findings "are actually attenuated as a consequence of dropping the subjects who failed from the analysis" (p. 578).
+
+**For (b).** Dropping subjects is unproblematic only when the treatment cannot change whether a subject passes the manipulation check (Corollary 1, p. 574). The paper adds that "if the treatment does not affect whether a subject passes the manipulation check, then it must be the case that passing will be unrelated to the treatment condition" (p. 575). Therefore, different failure rates across treatment conditions show that dropping subjects is problematic. "However, the converse does not generally hold" (p. 575), because "the types of subjects who fail the manipulation check under one treatment may not be the same as those who fail under a different treatment" (p. 575). In the paper's replication, two treatment conditions had failure rates of 6.4% and 7.5%, yet 24.9% and 63.7% of the subjects who failed were female (p. 578). The same logic applies to covariates: "[i]n order to justify discarding subjects, it is not sufficient to have balance on the observed covariates" (p. 576). 
+
+**For (c).** The paper locates the first-best in design, namely clear manipulations and attention checks placed before treatment (p. 579). Once a study has used a posttreatment manipulation check, the effect among subjects who would pass under every treatment condition is not point identified (p. 576). In that case, the paper "provide[s] sharp bounds for the average treatment effect among those who would pass the manipulation check under all conditions" (p. 573), while keeping the focus on intent-to-treat effects (p. 579). The bounds have clear limits, however, as they "will be uninformative in practice when failure rates are high" (p. 579). In the paper's replication, the bounds for the treatment conditions overlapped and were "largely uninformative" (pp. 578-579). Computing the bounds also requires the proportion of subjects who were dropped, which was not available for the original study (p. 578).
+
+## 4. Scope
+
+**Applies to:** randomized experiments that drop subjects on a check administered after treatment (p. 572). All three checks are triggered when the treatment could change whether a subject passes the check (p. 574). This includes papers that keep all subjects but report results separately by performance on a posttreatment check (p. 579).
+Note that experiments in which few subjects fail still trigger all three checks, although the concern is smaller, since the risk of bias grows as passing rates decrease (p. 576).
+
+**Does not apply to:** experiments that screen subjects with an attention check placed before treatment (p. 579). Screening before treatment changes the target to a subpopulation of attentive subjects, but it does not compromise internal validity (p. 579). The checks should also stay silent when a paper reports a manipulation check only to validate its treatment and drops no subjects, which the paper endorses as "a means of validation" (p. 579).
+
+Check (a) does not apply when the intent-to-treat effect from the full sample is the main result and the estimate after dropping subjects is presented as a secondary analysis (p. 579).
+
+Check (b) does not apply when a paper reports failure rates for each treatment condition descriptively, without using them to justify dropping subjects. It also stays silent when the result of the check cannot depend on the treatment by design (p. 576).
+
+Check (c) does not apply when a paper claims only the effect of assignment in the full sample and makes no claim about subjects who understood the treatment. When (c) does apply, a reviewer should not suggest instrumental variables as an alternative option, since treating the manipulation check as take-up requires that the treatment affect the outcome only through passing. This assumption cannot be verified from the data or generally ensured by design (p. 574).
+  
+## 5. What failure looks like
+
+A manuscript's sample section states that subjects who failed the manipulation check were excluded, and the N in the results tables is smaller than the number randomized, with no table for the full sample. A footnote defends the exclusion with a sentence such as "failure rates did not differ across conditions," sometimes with a balance table computed only on the subjects who passed, and says nothing about who failed in each treatment condition. The number of subjects dropped appears only as a total, or not at all. The discussion then describes the result as the effect "among respondents who understood the treatment" and reports a single point estimate with no bounds. The survey flow in the appendix shows that the check came after the treatment, and no attention check precedes it.
+
+## 6. Test cases
+
+**SHOULD trigger:** Crawford, Jarret T., Jennifer L. Brady, Jane M. Pilanski, and Heather Erny. 2013. "Differential Effects of Right-Wing Authoritarianism and Social Dominance Orientation on Political Candidate Support: The Moderating Role of Message Framing." *Journal of Social and Political Psychology* 1 (1): 5-28. In all three studies, participants who failed a check on the candidates' positions, which was placed after the manipulation, were removed from the analysis (pp. 8, 12, 16). No full-sample results are reported, which triggers check (a). The number of participants who were dropped in each condition is not reported either, so the request in check (c) for these numbers applies. Check (b) is not triggered, as the paper offers no justification for the exclusion, which is the problem caught by check (a).
+
+**Should NOT trigger:** Yang, Tony Zirui. 2025. "Normalization of Censorship: Evidence from China." *The Journal of Politics* 87 (4): 1227-1242. A near-miss: an online survey experiment that screens respondents with attention checks, but the checks are at the beginning of the survey, before random assignment (p. 1235), so the treatment cannot affect who passes. As no respondents are dropped on a posttreatment check, all three checks should stay silent.
